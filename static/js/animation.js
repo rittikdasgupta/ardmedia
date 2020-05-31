@@ -72,9 +72,9 @@ function sliderOutOnBodyTouch(){
     doc.addEventListener('touchend', () => {
         if(navSlide.classList.contains('active')){
             navSlide.classList.remove('active');
+            scrollActive();
         }
     });
-    scrollActive();
 }
 
 //SERVICE CARDS HOVER
