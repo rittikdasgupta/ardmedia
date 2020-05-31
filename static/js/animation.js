@@ -74,6 +74,7 @@ function sliderOutOnBodyTouch(){
             navSlide.classList.remove('active');
         }
     });
+    scrollActive();
 }
 
 //SERVICE CARDS HOVER
