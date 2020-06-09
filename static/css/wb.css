@@ -44,7 +44,7 @@ body {
 }
 
 #content-wrapper .sec-2 #sub-text {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 #content-wrapper .sec-1 {
@@ -117,5 +117,95 @@ body {
   border-radius: 50rem;
   padding: 5px 10px;
   margin: 10px;
+}
+
+/*---------Media Queries---------*/
+@media screen and (max-width: 768px) {
+  #content-wrapper #section1 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #content-wrapper #section1 #text, #content-wrapper #section1 #lnum {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #content-wrapper #section1 .sec-2 {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+  #content-wrapper #section1 .sec-2 #sub-text {
+    width: 100%;
+    font-size: 15.5px;
+    text-align: center;
+  }
+  #content-wrapper #section2 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #content-wrapper #section2 #lnum, #content-wrapper #section2 #text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #content-wrapper #section3 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #content-wrapper #section3 #sec-3-left {
+    display: none;
+  }
+  #content-wrapper #section3 #sec-3-right {
+    float: left;
+  }
+  #content-wrapper #section3 #sec-3-right #sec-3-right-text {
+    text-align: center;
+    font-size: 15px;
+  }
+  #content-wrapper #section4 {
+    padding-top: 60px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #content-wrapper #section4 #sec-4-left {
+    text-align: center;
+  }
+  #content-wrapper #section4 #sec-4-left #sub-section1 #sec-4-left-text1 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #content-wrapper #section4 #sec-4-left #sub-section2 .sec-4-btn {
+    font-size: 18px;
+  }
+  #content-wrapper #section4 #right {
+    display: none;
+  }
+  #content-wrapper #section5 {
+    height: 200px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #content-wrapper #section5 #text, #content-wrapper #section5 #lnum {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #content-wrapper #section5 .sec-2 {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0;
+  }
+  #content-wrapper #section5 .sec-2 .item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #content-wrapper #section5 .sec-2 .item #list-item {
+    width: 100%;
+    font-size: 16.5px;
+  }
+  #content-wrapper #section5 .sec-2 .item #list-sub-item {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=wb.css.map */

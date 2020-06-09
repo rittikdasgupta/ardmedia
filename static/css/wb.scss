@@ -43,7 +43,7 @@ body{
         padding-left:80px;
         margin:auto;
         #sub-text{
-            font-size:14px;
+            font-size:24px;
         }
     }
     .sec-1{
@@ -99,6 +99,106 @@ body{
                     margin:10px;
                 }
             }
+        }
+    }
+}
+
+
+/*---------Media Queries---------*/
+@media screen and (max-width:768px){
+    #content-wrapper{
+        #section1{
+            padding-right: 0px;
+            padding-left: 0px;
+            #text,#lnum{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .sec-2{
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 30px;
+                #sub-text{
+                    width: 100%;
+                    font-size: 15.5px;
+                    text-align: center;
+                }
+            }
+        }    
+        #section2{
+            padding-right: 0px;
+            padding-left: 0px;
+            #lnum,#text{
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        
+        #section3{
+            padding-right: 0px;
+            padding-left: 0px;
+            #sec-3-left{
+                display: none;
+            }
+            #sec-3-right{
+                float: left;;
+                #sec-3-right-text{
+                    text-align: center;
+                    font-size: 15px;
+                }
+            }
+        }
+        #section4{
+            padding-top: 60px;
+            padding-right: 0px;
+            padding-left: 0px;
+            #sec-4-left{
+                text-align: center;
+                #sub-section1{
+                    #sec-4-left-text1{
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
+                }
+                #sub-section2{
+                    .sec-4-btn{
+                        font-size: 18px;
+                    }
+                }
+            }
+            #right{
+                display: none;
+            }
+        }
+        #section5{
+            height: 200px;
+            padding-right: 0px;
+            padding-left: 0px;
+            #text,#lnum{
+                padding-left: 0px;
+                padding-right: 0px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .sec-2{
+                width: 100%;
+                padding-left: 0px;
+                padding-right: 0;
+                .item{
+                    padding-left: 0;
+                    padding-right: 0;
+                    #list-item{
+                        width: 100%;
+                        font-size: 16.5px;
+                    }
+                    #list-sub-item{
+                        font-size: 14px;
+                    }
+                }
+                
+            }
+            
         }
     }
 }

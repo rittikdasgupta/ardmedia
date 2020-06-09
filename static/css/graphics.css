@@ -1,0 +1,214 @@
+@font-face {
+  font-family: bahnschrift;
+  src: url(../webfonts/BAHNSCHRIFT.woff);
+}
+
+* {
+  font-family: bahnschrift;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+#container-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+#container-wrapper #section1 {
+  padding-top: 20px;
+}
+
+#container-wrapper #section1 .sec-1 #text {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+#container-wrapper #section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container-wrapper #section2 #sec-2-right {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+#container-wrapper #section2 #sec-2-right img {
+  height: 350px;
+  width: 600px;
+}
+
+#container-wrapper #section2 #sec-2-left #sec-2-left-text {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#container-wrapper #section3 .sec-3 #text {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+#container-wrapper #section4 {
+  padding-top: 50px;
+}
+
+#container-wrapper #section4 .sec-4 {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+#container-wrapper #section4 .sec-4 #sec-4-text {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#container-wrapper #section5 .sec-5 #text {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+#container-wrapper #section6 {
+  padding-top: 20px;
+}
+
+#container-wrapper #section6 .sec-6 .icon-list #row-list {
+  padding-top: 50px;
+}
+
+#container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list {
+  width: 80%;
+  margin: auto;
+  list-style-type: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list .list-icon img {
+  height: 60px;
+  width: 60px;
+}
+
+#container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list #text-right {
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+#container-wrapper #section7 .sec-7 #text {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+#container-wrapper #section8 {
+  padding-top: 30px;
+}
+
+#container-wrapper #section8 .sec-8 .sec-8-left {
+  padding-left: 50px;
+}
+
+#container-wrapper #section8 .sec-8 .sec-8-left #step {
+  padding-top: 30px;
+}
+
+#container-wrapper #section8 .sec-8 .sec-8-left #step .text {
+  background: gray;
+  color: #04d6d6;
+  font-weight: 700;
+  border-radius: 50rem;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 25px;
+}
+
+#container-wrapper #section8 .sec-8 .sec-8-left #step .step-text {
+  font-size: 20px;
+}
+
+#container-wrapper #section8 .sec-8 .sec-8-right {
+  padding-left: 150px;
+}
+
+#container-wrapper #section8 .sec-8 .sec-8-right img {
+  height: 280px;
+  width: 440px;
+}
+
+#container-wrapper #section3, #container-wrapper #section5, #container-wrapper #section7, #container-wrapper #section9, #container-wrapper #section10 {
+  padding-top: 80px;
+}
+
+#container-wrapper #section9 .sec-9 #text {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+#container-wrapper #section10 .sec-10 .sec-10-left .sec-10-left-text {
+  font-size: 32px;
+  font-weight: 250;
+}
+
+#container-wrapper #section10 .sec-10 .sec-10-left .sec-10-left-slider {
+  padding-top: 20px;
+}
+
+#container-wrapper #section10 .sec-10 .sec-10-left .sec-10-left-slider .carousel .carousel-inner {
+  border-radius: 20px;
+}
+
+#container-wrapper #section10 .sec-10 .sec-10-right .sec-10-right-text {
+  font-size: 32px;
+  font-weight: 250;
+}
+
+#container-wrapper #section10 .sec-10 .sec-10-right .sec-10-right-slider {
+  padding-top: 20px;
+}
+
+#container-wrapper #section10 .sec-10 .sec-10-right .sec-10-right-slider .carousel .carousel-inner {
+  border-radius: 20px;
+}
+
+#container-wrapper #section11, #container-wrapper #section12, #container-wrapper #section13 {
+  padding-top: 80px;
+}
+
+#container-wrapper #section11 .sec-11 .sec-11-text, #container-wrapper #section11 .sec-11 .sec-12-text, #container-wrapper #section11 .sec-11 .sec-13-text, #container-wrapper #section11 .sec-12 .sec-11-text, #container-wrapper #section11 .sec-12 .sec-12-text, #container-wrapper #section11 .sec-12 .sec-13-text, #container-wrapper #section11 .sec-13 .sec-11-text, #container-wrapper #section11 .sec-13 .sec-12-text, #container-wrapper #section11 .sec-13 .sec-13-text, #container-wrapper #section12 .sec-11 .sec-11-text, #container-wrapper #section12 .sec-11 .sec-12-text, #container-wrapper #section12 .sec-11 .sec-13-text, #container-wrapper #section12 .sec-12 .sec-11-text, #container-wrapper #section12 .sec-12 .sec-12-text, #container-wrapper #section12 .sec-12 .sec-13-text, #container-wrapper #section12 .sec-13 .sec-11-text, #container-wrapper #section12 .sec-13 .sec-12-text, #container-wrapper #section12 .sec-13 .sec-13-text, #container-wrapper #section13 .sec-11 .sec-11-text, #container-wrapper #section13 .sec-11 .sec-12-text, #container-wrapper #section13 .sec-11 .sec-13-text, #container-wrapper #section13 .sec-12 .sec-11-text, #container-wrapper #section13 .sec-12 .sec-12-text, #container-wrapper #section13 .sec-12 .sec-13-text, #container-wrapper #section13 .sec-13 .sec-11-text, #container-wrapper #section13 .sec-13 .sec-12-text, #container-wrapper #section13 .sec-13 .sec-13-text {
+  font-size: 32px;
+  font-weight: 250;
+}
+
+#container-wrapper #section11 .sec-11 .sec-11-slider, #container-wrapper #section11 .sec-11 .sec-12-slider, #container-wrapper #section11 .sec-11 .sec-13-slider, #container-wrapper #section11 .sec-12 .sec-11-slider, #container-wrapper #section11 .sec-12 .sec-12-slider, #container-wrapper #section11 .sec-12 .sec-13-slider, #container-wrapper #section11 .sec-13 .sec-11-slider, #container-wrapper #section11 .sec-13 .sec-12-slider, #container-wrapper #section11 .sec-13 .sec-13-slider, #container-wrapper #section12 .sec-11 .sec-11-slider, #container-wrapper #section12 .sec-11 .sec-12-slider, #container-wrapper #section12 .sec-11 .sec-13-slider, #container-wrapper #section12 .sec-12 .sec-11-slider, #container-wrapper #section12 .sec-12 .sec-12-slider, #container-wrapper #section12 .sec-12 .sec-13-slider, #container-wrapper #section12 .sec-13 .sec-11-slider, #container-wrapper #section12 .sec-13 .sec-12-slider, #container-wrapper #section12 .sec-13 .sec-13-slider, #container-wrapper #section13 .sec-11 .sec-11-slider, #container-wrapper #section13 .sec-11 .sec-12-slider, #container-wrapper #section13 .sec-11 .sec-13-slider, #container-wrapper #section13 .sec-12 .sec-11-slider, #container-wrapper #section13 .sec-12 .sec-12-slider, #container-wrapper #section13 .sec-12 .sec-13-slider, #container-wrapper #section13 .sec-13 .sec-11-slider, #container-wrapper #section13 .sec-13 .sec-12-slider, #container-wrapper #section13 .sec-13 .sec-13-slider {
+  padding-top: 20px;
+}
+
+#container-wrapper #section11 .sec-11 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-11 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-11 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-12 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-12 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-12 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-13 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-13 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-13 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-11 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-11 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-11 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-12 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-12 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-12 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-13 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-13 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-13 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-11 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-11 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-11 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-12 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-12 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-12 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-13 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-13 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-13 .sec-13-slider .carousel .carousel-inner {
+  border-radius: 20px;
+}
+
+#container-wrapper #section13 {
+  padding-bottom: 50px;
+}
+/*# sourceMappingURL=graphics.css.map */

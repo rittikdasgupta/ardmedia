@@ -5,6 +5,12 @@ app=Flask(__name__)
 @app.route("/")
 def index():
     return render_template("main/index.html")
+@app.route("/contact")
+def contacts():
+    return render_template("main/contact.html")
+@app.route("/graphic")
+def graphics():
+    return render_template("main/graphics.html")
 @app.route("/wd")
 def wdesign():
     return render_template("main/wb.html")
