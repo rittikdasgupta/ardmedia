@@ -81,10 +81,7 @@ body{
         .sec-6{
             .icon-list{
                 #row-list{
-                    padding-top: 50px;
                     .ul-list{
-                        width:80%;
-                        margin: auto;
                         list-style-type: none;
                         padding-left:0;
                         display: flex;
@@ -159,29 +156,14 @@ body{
         }
     }
     #section10{
-        .sec-10{
-            .sec-10-left{
-                .sec-10-left-text{
-                    font-size: 32px;
-                    font-weight: 250;
+        .sec-wrapper{
+            .sec-inner{
+                .sec-text{
+                    font-size: 35px;
+                    padding:20px;
                 }
-                .sec-10-left-slider{
-                    padding-top: 20px;
-                    .carousel{
-                        .carousel-inner{
-                            border-radius: 20px;
-                        }
-                    }
-                }
-            }
-            .sec-10-right{
-                .sec-10-right-text{
-                    font-size: 32px;
-                    font-weight: 250;
-                }
-                .sec-10-right-slider{
-                    padding-top: 20px;
-                    .carousel{
+                .sec-slider{
+                    #myCarousel{
                         .carousel-inner{
                             border-radius: 20px;
                         }
@@ -190,24 +172,174 @@ body{
             }
         }
     }
-    #section11,#section12,#section13{
-        padding-top: 80px;
-        .sec-11,.sec-12,.sec-13{
-            .sec-11-text,.sec-12-text,.sec-13-text{
-                font-size: 32px;
-                font-weight: 250;
+}
+#section4-mobile{
+    display: none;
+}
+@media screen and (max-width:768px){
+    #container-wrapper{
+        #section1{
+            padding-right: 0px;
+            padding-left: 0px;
+            .sec-1{
+                #text{
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                }
             }
-            .sec-11-slider,.sec-12-slider,.sec-13-slider{
-                padding-top: 20px;
-                .carousel{
-                    .carousel-inner{
-                        border-radius: 20px;
+        }
+        #section2{
+            flex-wrap: wrap;
+            #sec-2-right{
+                padding:0;
+                img{
+                    padding:40px 20px;
+                }
+            }
+            #sec-2-left{
+                #sec-2-left-text{
+                    font-size: 15px;
+                    text-align: center;
+                    padding:20px;
+                }
+            }
+        }
+        #section3{
+            padding-top:20px;
+            .sec-3{
+                #text{
+                    font-size:20px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+        #section4{
+            display: none;
+        }
+        #section4-mobile{
+            display: block;
+            .carousel{
+                padding:30px 0px;
+                .carousel-inner{
+                    .item{
+                        .card{
+                            padding:0px 20px;
+                            .card-body{
+                                .card-title{
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                }
+                                .card-text{
+                                    font-size: 15px;
+                                    text-align: center;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
-    }
-    #section13{
-        padding-bottom: 50px;
+        #section5{
+            .sec-5{
+                #text{
+                    font-size:20px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+        #section6{
+            padding-top: 20px;
+            .sec-6{
+                .icon-list{
+                    #row-list{
+                        padding:20px;
+                        .ul-list{
+                            .list{
+
+                                .list-icon{
+                                    text-align: center;
+                                    img{
+                                        height: 40px;
+                                        width: 40px;
+                                    }
+                                }
+                                #text-right{
+                                    padding:10px 0px;
+                                    font-size: 14px;
+                                    text-align: center;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section7{
+            .sec-7{
+                #text{
+                    font-size:25px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+        #section8{
+            padding-top: 30px;
+            .sec-8{
+                .sec-8-left{
+                    padding:20px;
+                    #step{
+                        padding-top: 30px;
+                        display: flex;
+                        flex-direction: row;
+                        .text{
+                            font-size: 18px;
+                        }
+                        .step-text{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .sec-8-right{
+                    padding-left: 150px;
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+        #section9{
+            .sec-9{
+                #text{
+                    font-size:22px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+        #section10{
+            padding:50px 0px;
+            .sec-wrapper{
+                .sec-inner{
+                    padding:20px;
+                    .sec-text{
+                        font-size: 18px;
+                        padding:20px 0px;
+                    }
+                    .sec-slider{
+                        #myCarousel{
+                            .carousel-inner{
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

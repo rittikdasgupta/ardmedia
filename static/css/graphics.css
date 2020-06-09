@@ -79,13 +79,7 @@ body {
   padding-top: 20px;
 }
 
-#container-wrapper #section6 .sec-6 .icon-list #row-list {
-  padding-top: 50px;
-}
-
 #container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list {
-  width: 80%;
-  margin: auto;
   list-style-type: none;
   padding-left: 0;
   display: -webkit-box;
@@ -165,50 +159,146 @@ body {
   font-weight: normal;
 }
 
-#container-wrapper #section10 .sec-10 .sec-10-left .sec-10-left-text {
-  font-size: 32px;
-  font-weight: 250;
+#container-wrapper #section10 .sec-wrapper .sec-inner .sec-text {
+  font-size: 35px;
+  padding: 20px;
 }
 
-#container-wrapper #section10 .sec-10 .sec-10-left .sec-10-left-slider {
-  padding-top: 20px;
-}
-
-#container-wrapper #section10 .sec-10 .sec-10-left .sec-10-left-slider .carousel .carousel-inner {
+#container-wrapper #section10 .sec-wrapper .sec-inner .sec-slider #myCarousel .carousel-inner {
   border-radius: 20px;
 }
 
-#container-wrapper #section10 .sec-10 .sec-10-right .sec-10-right-text {
-  font-size: 32px;
-  font-weight: 250;
+#section4-mobile {
+  display: none;
 }
 
-#container-wrapper #section10 .sec-10 .sec-10-right .sec-10-right-slider {
-  padding-top: 20px;
-}
-
-#container-wrapper #section10 .sec-10 .sec-10-right .sec-10-right-slider .carousel .carousel-inner {
-  border-radius: 20px;
-}
-
-#container-wrapper #section11, #container-wrapper #section12, #container-wrapper #section13 {
-  padding-top: 80px;
-}
-
-#container-wrapper #section11 .sec-11 .sec-11-text, #container-wrapper #section11 .sec-11 .sec-12-text, #container-wrapper #section11 .sec-11 .sec-13-text, #container-wrapper #section11 .sec-12 .sec-11-text, #container-wrapper #section11 .sec-12 .sec-12-text, #container-wrapper #section11 .sec-12 .sec-13-text, #container-wrapper #section11 .sec-13 .sec-11-text, #container-wrapper #section11 .sec-13 .sec-12-text, #container-wrapper #section11 .sec-13 .sec-13-text, #container-wrapper #section12 .sec-11 .sec-11-text, #container-wrapper #section12 .sec-11 .sec-12-text, #container-wrapper #section12 .sec-11 .sec-13-text, #container-wrapper #section12 .sec-12 .sec-11-text, #container-wrapper #section12 .sec-12 .sec-12-text, #container-wrapper #section12 .sec-12 .sec-13-text, #container-wrapper #section12 .sec-13 .sec-11-text, #container-wrapper #section12 .sec-13 .sec-12-text, #container-wrapper #section12 .sec-13 .sec-13-text, #container-wrapper #section13 .sec-11 .sec-11-text, #container-wrapper #section13 .sec-11 .sec-12-text, #container-wrapper #section13 .sec-11 .sec-13-text, #container-wrapper #section13 .sec-12 .sec-11-text, #container-wrapper #section13 .sec-12 .sec-12-text, #container-wrapper #section13 .sec-12 .sec-13-text, #container-wrapper #section13 .sec-13 .sec-11-text, #container-wrapper #section13 .sec-13 .sec-12-text, #container-wrapper #section13 .sec-13 .sec-13-text {
-  font-size: 32px;
-  font-weight: 250;
-}
-
-#container-wrapper #section11 .sec-11 .sec-11-slider, #container-wrapper #section11 .sec-11 .sec-12-slider, #container-wrapper #section11 .sec-11 .sec-13-slider, #container-wrapper #section11 .sec-12 .sec-11-slider, #container-wrapper #section11 .sec-12 .sec-12-slider, #container-wrapper #section11 .sec-12 .sec-13-slider, #container-wrapper #section11 .sec-13 .sec-11-slider, #container-wrapper #section11 .sec-13 .sec-12-slider, #container-wrapper #section11 .sec-13 .sec-13-slider, #container-wrapper #section12 .sec-11 .sec-11-slider, #container-wrapper #section12 .sec-11 .sec-12-slider, #container-wrapper #section12 .sec-11 .sec-13-slider, #container-wrapper #section12 .sec-12 .sec-11-slider, #container-wrapper #section12 .sec-12 .sec-12-slider, #container-wrapper #section12 .sec-12 .sec-13-slider, #container-wrapper #section12 .sec-13 .sec-11-slider, #container-wrapper #section12 .sec-13 .sec-12-slider, #container-wrapper #section12 .sec-13 .sec-13-slider, #container-wrapper #section13 .sec-11 .sec-11-slider, #container-wrapper #section13 .sec-11 .sec-12-slider, #container-wrapper #section13 .sec-11 .sec-13-slider, #container-wrapper #section13 .sec-12 .sec-11-slider, #container-wrapper #section13 .sec-12 .sec-12-slider, #container-wrapper #section13 .sec-12 .sec-13-slider, #container-wrapper #section13 .sec-13 .sec-11-slider, #container-wrapper #section13 .sec-13 .sec-12-slider, #container-wrapper #section13 .sec-13 .sec-13-slider {
-  padding-top: 20px;
-}
-
-#container-wrapper #section11 .sec-11 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-11 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-11 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-12 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-12 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-12 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-13 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-13 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section11 .sec-13 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-11 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-11 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-11 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-12 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-12 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-12 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-13 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-13 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section12 .sec-13 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-11 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-11 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-11 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-12 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-12 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-12 .sec-13-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-13 .sec-11-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-13 .sec-12-slider .carousel .carousel-inner, #container-wrapper #section13 .sec-13 .sec-13-slider .carousel .carousel-inner {
-  border-radius: 20px;
-}
-
-#container-wrapper #section13 {
-  padding-bottom: 50px;
+@media screen and (max-width: 768px) {
+  #container-wrapper #section1 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #container-wrapper #section1 .sec-1 #text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #container-wrapper #section2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #container-wrapper #section2 #sec-2-right {
+    padding: 0;
+  }
+  #container-wrapper #section2 #sec-2-right img {
+    padding: 40px 20px;
+  }
+  #container-wrapper #section2 #sec-2-left #sec-2-left-text {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+  #container-wrapper #section3 {
+    padding-top: 20px;
+  }
+  #container-wrapper #section3 .sec-3 #text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #container-wrapper #section4 {
+    display: none;
+  }
+  #container-wrapper #section4-mobile {
+    display: block;
+  }
+  #container-wrapper #section4-mobile .carousel {
+    padding: 30px 0px;
+  }
+  #container-wrapper #section4-mobile .carousel .carousel-inner .item .card {
+    padding: 0px 20px;
+  }
+  #container-wrapper #section4-mobile .carousel .carousel-inner .item .card .card-body .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #container-wrapper #section4-mobile .carousel .carousel-inner .item .card .card-body .card-text {
+    font-size: 15px;
+    text-align: center;
+  }
+  #container-wrapper #section5 .sec-5 #text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #container-wrapper #section6 {
+    padding-top: 20px;
+  }
+  #container-wrapper #section6 .sec-6 .icon-list #row-list {
+    padding: 20px;
+  }
+  #container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list .list-icon {
+    text-align: center;
+  }
+  #container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list .list-icon img {
+    height: 40px;
+    width: 40px;
+  }
+  #container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list #text-right {
+    padding: 10px 0px;
+    font-size: 14px;
+    text-align: center;
+  }
+  #container-wrapper #section7 .sec-7 #text {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #container-wrapper #section8 {
+    padding-top: 30px;
+  }
+  #container-wrapper #section8 .sec-8 .sec-8-left {
+    padding: 20px;
+  }
+  #container-wrapper #section8 .sec-8 .sec-8-left #step {
+    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #container-wrapper #section8 .sec-8 .sec-8-left #step .text {
+    font-size: 18px;
+  }
+  #container-wrapper #section8 .sec-8 .sec-8-left #step .step-text {
+    font-size: 18px;
+  }
+  #container-wrapper #section8 .sec-8 .sec-8-right {
+    padding-left: 150px;
+  }
+  #container-wrapper #section8 .sec-8 .sec-8-right img {
+    display: none;
+  }
+  #container-wrapper #section9 .sec-9 #text {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #container-wrapper #section10 {
+    padding: 50px 0px;
+  }
+  #container-wrapper #section10 .sec-wrapper .sec-inner {
+    padding: 20px;
+  }
+  #container-wrapper #section10 .sec-wrapper .sec-inner .sec-text {
+    font-size: 18px;
+    padding: 20px 0px;
+  }
+  #container-wrapper #section10 .sec-wrapper .sec-inner .sec-slider #myCarousel .carousel-inner {
+    border-radius: 10px;
+  }
 }
 /*# sourceMappingURL=graphics.css.map */
