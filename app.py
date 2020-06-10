@@ -8,7 +8,7 @@ def index():
 @app.route("/contact")
 def contacts():
     return render_template("main/contact.html")
-@app.route("/graphic")
+@app.route("/graphics")
 def graphics():
     return render_template("main/graphics.html")
 @app.route("/wd")

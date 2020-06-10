@@ -13,8 +13,12 @@ body {
   margin: 0;
 }
 
+.navbar .navcont .flexbox {
+  padding-top: 10px;
+}
+
 #container-wrapper {
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 
@@ -60,49 +64,56 @@ body {
   padding-top: 50px;
 }
 
-#container-wrapper #section4 .sec-4 {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
 #container-wrapper #section4 .sec-4 #sec-4-text {
   font-size: 20px;
-  font-weight: 100;
+  font-weight: normal;
+}
+
+#container-wrapper #section5 {
+  width: 85%;
+  margin: auto;
+  padding: 20px 0px;
 }
 
 #container-wrapper #section5 .sec-5 #text {
   font-size: 36px;
   font-weight: normal;
+  text-align: center;
 }
 
 #container-wrapper #section6 {
   padding-top: 20px;
 }
 
+#container-wrapper #section6 .sec-6 .icon-list {
+  width: 80%;
+  margin: auto;
+}
+
+#container-wrapper #section6 .sec-6 .icon-list #row-list {
+  padding: 20px 0px;
+}
+
 #container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list {
   list-style-type: none;
   padding-left: 0;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-#container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+#container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list .list-icon {
+  margin: auto;
 }
 
 #container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list .list-icon img {
   height: 60px;
   width: 60px;
+  margin: auto;
 }
 
 #container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list #text-right {
@@ -159,6 +170,10 @@ body {
   font-weight: normal;
 }
 
+#container-wrapper #section10 .sec-wrapper .sec-inner {
+  padding-bottom: 40px;
+}
+
 #container-wrapper #section10 .sec-wrapper .sec-inner .sec-text {
   font-size: 35px;
   padding: 20px;
@@ -173,6 +188,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .slider-header {
+    padding-bottom: 20px;
+  }
+  #contents {
+    padding: 20px 0px;
+  }
   #container-wrapper #section1 {
     padding-right: 0px;
     padding-left: 0px;
@@ -190,7 +211,8 @@ body {
     padding: 0;
   }
   #container-wrapper #section2 #sec-2-right img {
-    padding: 40px 20px;
+    width: 350px;
+    height: 250px;
   }
   #container-wrapper #section2 #sec-2-left #sec-2-left-text {
     font-size: 15px;
@@ -212,10 +234,11 @@ body {
     display: block;
   }
   #container-wrapper #section4-mobile .carousel {
-    padding: 30px 0px;
+    padding-top: 20px;
   }
   #container-wrapper #section4-mobile .carousel .carousel-inner .item .card {
-    padding: 0px 20px;
+    padding: 20px 20px;
+    min-height: 320px;
   }
   #container-wrapper #section4-mobile .carousel .carousel-inner .item .card .card-body .card-title {
     font-size: 18px;
@@ -226,6 +249,11 @@ body {
     font-size: 15px;
     text-align: center;
   }
+  #container-wrapper #section5 {
+    padding-top: 0;
+    width: 100%;
+    margin: auto;
+  }
   #container-wrapper #section5 .sec-5 #text {
     font-size: 20px;
     font-weight: bold;
@@ -233,6 +261,10 @@ body {
   }
   #container-wrapper #section6 {
     padding-top: 20px;
+  }
+  #container-wrapper #section6 .sec-6 .icon-list {
+    width: 100%;
+    margin: auto;
   }
   #container-wrapper #section6 .sec-6 .icon-list #row-list {
     padding: 20px;
@@ -246,8 +278,11 @@ body {
   }
   #container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list #text-right {
     padding: 10px 0px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
+  }
+  #container-wrapper #section7 {
+    padding-top: 20px;
   }
   #container-wrapper #section7 .sec-7 #text {
     font-size: 25px;
@@ -255,10 +290,10 @@ body {
     text-align: center;
   }
   #container-wrapper #section8 {
-    padding-top: 30px;
+    padding-top: 20px;
   }
   #container-wrapper #section8 .sec-8 .sec-8-left {
-    padding: 20px;
+    padding-left: 0;
   }
   #container-wrapper #section8 .sec-8 .sec-8-left #step {
     padding-top: 30px;
@@ -282,20 +317,25 @@ body {
   #container-wrapper #section8 .sec-8 .sec-8-right img {
     display: none;
   }
+  #container-wrapper #section9 {
+    padding-top: 0;
+    width: 100%;
+    margin: auto;
+  }
   #container-wrapper #section9 .sec-9 #text {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
   }
   #container-wrapper #section10 {
-    padding: 50px 0px;
+    padding: 10px 0px;
   }
   #container-wrapper #section10 .sec-wrapper .sec-inner {
     padding: 20px;
   }
   #container-wrapper #section10 .sec-wrapper .sec-inner .sec-text {
     font-size: 18px;
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
   #container-wrapper #section10 .sec-wrapper .sec-inner .sec-slider #myCarousel .carousel-inner {
     border-radius: 10px;
