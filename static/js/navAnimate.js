@@ -10,7 +10,7 @@ const slider = () => {
 const sliderOut = () =>{
     const arrow=document.querySelector('.arrow');
     const navSlide=document.querySelector('.slider-main');
-    arrow.addEventListener('ontouchend', () => {
+    arrow.addEventListener('click', () => {
         navSlide.classList.toggle('active');
         scrollActive();
     });
