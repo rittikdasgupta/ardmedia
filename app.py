@@ -14,6 +14,8 @@ def graphics():
 @app.route("/wd")
 def wdesign():
     return render_template("main/wb.html")
-
+@app.route("/socialmedia")
+def smedia():
+    return render_template("main/socialmedia.html")
 if __name__=="__main__":
     app.run()
