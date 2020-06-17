@@ -843,19 +843,3 @@ $footerBgColor:#0b2d35;
         transform: translateY(5vh);
     }
 }
-@media (prefers-color-scheme:dark){
-    body{
-        background-color: rgb(34, 34, 34);
-    }
-    *{
-        color:white;
-    }
-}
-@media (prefers-color-scheme:light){
-    body{
-        background-color: white;
-    }
-    *{
-        color:black;
-    }
-}

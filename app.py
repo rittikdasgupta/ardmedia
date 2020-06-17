@@ -17,5 +17,8 @@ def wdesign():
 @app.route("/socialmedia")
 def smedia():
     return render_template("main/socialmedia.html")
+@app.route("/team")
+def team():
+    return render_template("main/team.html")
 if __name__=="__main__":
     app.run()

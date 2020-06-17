@@ -197,22 +197,4 @@ body {
     text-align: center;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #222222;
-  }
-  * {
-    color: white;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-  }
-  * {
-    color: black;
-  }
-}
 /*# sourceMappingURL=socialmedia.css.map */

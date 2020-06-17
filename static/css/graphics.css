@@ -341,22 +341,4 @@ body {
     border-radius: 10px;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #222222;
-  }
-  * {
-    color: white;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-  }
-  * {
-    color: black;
-  }
-}
 /*# sourceMappingURL=graphics.css.map */

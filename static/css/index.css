@@ -946,22 +946,4 @@
             transform: translateY(5vh);
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #222222;
-  }
-  * {
-    color: white;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-  }
-  * {
-    color: black;
-  }
-}
 /*# sourceMappingURL=index.css.map */
