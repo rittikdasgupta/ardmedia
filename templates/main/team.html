@@ -23,13 +23,13 @@
     <!--Slider Code-->
     <section class="slider-main" style="width: 100%;">
         <!--"Opac-slider" transparent section overlapped over "slider-main" section-->
-        <section id="Opac-slider" style="width: 100%; opacity: 0.5; height:100vh; position: absolute; background-color: #000;" onclick="sliderOutOnBodyTouch()"></section>
+        <section id="Opac-slider" style="width: 100%; opacity: 0.5; height:100vh; position: absolute; background-color: #000;"></section>
         <!--"slider-head" secion overlapped over the "Opac-slider" transparent section-->
         <section id="slider-head" style="width: 65%; position: absolute;">
             <section id= "slider">
                 <section id="slider-content">
                     <div class="slider-header">
-                        <img src="../static/assets/arlogo.png" style="width:150px;height:30px;"><a href="#" class="arrow" onclick="sliderOut()"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                        <img src="../static/assets/arlogo.png" style="width:150px;height:30px;"><a href="#" class="arrow"><span class="glyphicon glyphicon-arrow-right"></span></a>
                     </div>
                     <hr color="white" width="100%">
                     <section id="contents" style="list-style: none;">
@@ -73,7 +73,7 @@
                     <div class="navbar-header">
                         <a href="/" class="navbar-brand"><img src="../static/assets/logolatest.png" class="img-responsive" style="width:250px;height:40px;"></a>                  
                         <a href="/" class="navbar-brand-mobile"><img src="../static/assets/arlogo.png" class="img-responsive" style="width:240px;height:35px;"></a>                   
-                        <button class="hamburger" onclick="slider()">
+                        <button class="hamburger">
                             <div class="ham"></div>
                             <div class="ham"></div>
                             <div class="ham"></div>
@@ -262,6 +262,11 @@
         //MOBILE VIEW NAV SLIDE IN
         const ham=document.querySelector('.hamburger');
         const navSlide=document.querySelector('.slider-main');
+        const Opac=document.querySelector('#Opac-slider');
+        const arr=document.querySelector('.arrow');
+        ham.addEventListener('touchend',() => {slider();});
+        Opac.addEventListener('touchend',() => {sliderOutOnBodyTouch()});
+        arr.addEventListener('touchend',() => {sliderOut()});
         function slider(){
             navSlide.classList.toggle('active');
             scrollDisable();
