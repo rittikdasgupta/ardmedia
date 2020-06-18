@@ -345,7 +345,7 @@ body {
   }
 }
 
-@media all and (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: light) {
   body {
     background-color: #ebebeb;
   }
@@ -403,7 +403,7 @@ body {
   }
 }
 
-@media all and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
   .navbar .navbar-brand {
     padding: 0;
   }
