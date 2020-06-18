@@ -203,10 +203,14 @@ body{
         display: flex;
         align-items: flex-end;
         justify-content: space-around;
+        padding-bottom: 20px;
         .glyphicon{
-            color:grey;
+            color:white;
 
         }
+    }
+    #contents{
+        padding: 20px 0;
     }
     #contents h4 {
         color: white;
@@ -222,6 +226,7 @@ body{
         position: absolute;
         z-index: 9999;
         transition: 0.4s;
+        display: flex;
         #contents{
             height:50vh;
             display: flex;
@@ -245,7 +250,7 @@ body{
         height:1px;
     }
 }
-@media screen and (prefers-color-scheme: light){
+@media all and (prefers-color-scheme: light){
     body{
         background-color: #ebebeb;
     }
@@ -290,6 +295,9 @@ body{
             }
         }
     }
+    #slider{
+        background-color: #60efdb; 
+    }
     .cards-wrapper{
         .cards-content{
             .cards{
@@ -314,7 +322,7 @@ body{
         background-color: #02adad;
     }
 }
-@media screen and (prefers-color-scheme: dark){
+@media all and (prefers-color-scheme: dark){
     .navbar{
         .navbar-brand{
             padding:0;
@@ -328,6 +336,12 @@ body{
                 display: flex;
                 padding:0;
             }
+        }
+    }
+    .slider-header{
+        .glyphicon{
+            color:white;
+
         }
     }
     .member-role{

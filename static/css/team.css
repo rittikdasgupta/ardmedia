@@ -288,9 +288,13 @@ body {
             align-items: flex-end;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-bottom: 20px;
   }
   .slider-header .glyphicon {
-    color: grey;
+    color: white;
+  }
+  #contents {
+    padding: 20px 0;
   }
   #contents h4 {
     color: white;
@@ -308,6 +312,9 @@ body {
     z-index: 9999;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .slider-main #contents {
     height: 50vh;
@@ -345,7 +352,7 @@ body {
   }
 }
 
-@media screen and (prefers-color-scheme: light) {
+@media all and (prefers-color-scheme: light) {
   body {
     background-color: #ebebeb;
   }
@@ -381,6 +388,9 @@ body {
     -webkit-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
   }
+  #slider {
+    background-color: #60efdb;
+  }
   .cards-wrapper .cards-content .cards {
     background-color: #ebebeb;
     -webkit-box-shadow: 10px 10px 10px #cccccc,  -10px -10px 10px #fefefe;
@@ -403,7 +413,7 @@ body {
   }
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media all and (prefers-color-scheme: dark) {
   .navbar .navbar-brand {
     padding: 0;
   }
@@ -416,6 +426,9 @@ body {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+  }
+  .slider-header .glyphicon {
+    color: white;
   }
   .member-role {
     color: grey;

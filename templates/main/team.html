@@ -12,10 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
     <!--TAILWIND CSS-->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <!--CSS FILES-->
-    <link rel="stylesheet" type="text/css" href="../../static/css/animate.css">
     <!--JS-->
-    <script src="../../static/js/navAnimate.js"></script>
+    <!--<script src="../../static/js/teamNavbar.js"></script>-->
     <!--FONT AWESOME-->
     <link rel="stylesheet" type="text/css" href="../../static/css/all.min.css">
     <!--CUSTOM CSS-->
@@ -25,13 +23,13 @@
     <!--Slider Code-->
     <section class="slider-main" style="width: 100%;">
         <!--"Opac-slider" transparent section overlapped over "slider-main" section-->
-        <section id="Opac-slider" style="width: 100%; opacity: 0.5; height:100vh; position: absolute; background-color: #000;"></section>
+        <section id="Opac-slider" style="width: 100%; opacity: 0.5; height:100vh; position: absolute; background-color: #000;" onclick="sliderOutOnBodyTouch()"></section>
         <!--"slider-head" secion overlapped over the "Opac-slider" transparent section-->
         <section id="slider-head" style="width: 65%; position: absolute;">
             <section id= "slider">
                 <section id="slider-content">
                     <div class="slider-header">
-                        <img src="../static/assets/arlogo.png" style="width:150px;height:30px;"><a href="#" class="arrow"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                        <img src="../static/assets/arlogo.png" style="width:150px;height:30px;"><a href="#" class="arrow" onclick="sliderOut()"><span class="glyphicon glyphicon-arrow-right"></span></a>
                     </div>
                     <hr color="white" width="100%">
                     <section id="contents" style="list-style: none;">
@@ -42,9 +40,9 @@
                             </a>
                         </li>
                         <li class="items">
-                            <a href="#" class="item">
-                                <h4 class="subnav-link">CORPORATE</h4>
-                                <span class="subnav-nav-link">About Us</span>
+                            <a href="/contact" class="item">
+                                <h4 class="subnav-link">CONTACT US</h4>
+                                <span class="subnav-nav-link">Get In Touch</span>
                             </a>
                         </li>
                         <li class="items">
@@ -75,11 +73,11 @@
                     <div class="navbar-header">
                         <a href="/" class="navbar-brand"><img src="../static/assets/logolatest.png" class="img-responsive" style="width:250px;height:40px;"></a>                  
                         <a href="/" class="navbar-brand-mobile"><img src="../static/assets/arlogo.png" class="img-responsive" style="width:240px;height:35px;"></a>                   
-                        <div class="hamburger">
+                        <button class="hamburger" onclick="slider()">
                             <div class="ham"></div>
                             <div class="ham"></div>
                             <div class="ham"></div>
-                        </div>
+                        </button>
                     </div>
                     <div class="flexbox">
                         <ul class="sub-nav">
@@ -90,9 +88,9 @@
                                 </a>
                             </li>
                             <li class="items">
-                                <a href="#" class="item">
-                                    <h4 class="subnav-link">CORPORATE</h4>
-                                    <span class="subnav-nav-link">About Us</span>
+                                <a href="/contact" class="item">
+                                    <h4 class="subnav-link">CONTACT US</h4>
+                                    <span class="subnav-nav-link">Get In Touch</span>
                                 </a>
                             </li>
                             <li class="items">
@@ -260,5 +258,33 @@
             </div>
         </div>
     </section>
+    <script>
+        //MOBILE VIEW NAV SLIDE IN
+        const ham=document.querySelector('.hamburger');
+        const navSlide=document.querySelector('.slider-main');
+        function slider(){
+            navSlide.classList.toggle('active');
+            scrollDisable();
+        }
+        function sliderOut(){
+            let navSlide=document.querySelector('.slider-main');
+            navSlide.classList.toggle('active');
+            scrollActive();
+        }
+        function scrollDisable(){
+            document.querySelector('html').style.position='fixed';
+        }
+        function scrollActive(){
+            document.querySelector('html').style.position='static';
+        }
+        function sliderOutOnBodyTouch(){
+            let navSlide=document.querySelector('.slider-main');
+            if(navSlide.classList.contains('active')){
+                navSlide.classList.remove('active');
+                scrollActive();
+            }
+        }
+        //END MOBILE VIEW NAV SLIDE IN
+    </script>
 </body>
 </html>

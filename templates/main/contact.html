@@ -1,25 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-</head>
-<body>
-  <form action="https://send.pageclip.co/Y2APWev06toyRYYzbmtMzwi0YIcfJYbg/contact-form" class="pageclip-form" method="post">
-    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-
-    <!-- It looks like you are creating a contact form. These email and subject fields are special -->
-    <!-- See https://pageclip.co/docs#special-fields for more info -->
-    <input type="email" name="email" value="roscoe@example.com" />
-    <input type="text" name="subject" value="A contact subject" />
-
-    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-    <button type="submit" class="pageclip-form__submit">
-      <span>Send</span>
-    </button>
-  </form>
-</body>
-</html>
+{% extends "main/main.html" %}
+{% block link %}
+<link rel="stylesheet" type="text/css" href="../../static/css/credential_layout.css">
+{% endblock %}
+{% block content %}
+<div class="container outer">
+  <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4 form-box">
+      <form method='POST' class='form-dsgn-rgst'>
+        <div class="form-group">
+            <div class='col-xs-offset-2 col-xs-8 form-header-heavy text-center'>Let's Connect:</div>
+        </div>
+        <div class='form-group'>
+            <input type="text" name="firsname" class="form-control" placeholder="Firstname">
+        </div>
+        <div class='form-group'>
+            <input type="text" name="lastname" class="form-control" placeholder="Lastname">
+        </div>
+        <div class='form-group'>
+            <input type="email" name='email' placeholder="Email" class="form-control">
+        </div>
+        <div class='form-group'>
+            <input type="number" name='number' placeholder="Phone Number" class="form-control">
+        </div>
+        <div class='form-group'>
+            <textarea type="text" rows=5 name='message' placeholder="Message" class="form-control"></textarea>
+        </div>
+        <div class='form-group'>
+            <button class='form-control btn-dsgn' type='submit'>Contact</button>
+        </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
