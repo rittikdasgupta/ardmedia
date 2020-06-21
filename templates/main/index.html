@@ -3,27 +3,43 @@
 <link rel="stylesheet" type="text/css" href="../../static/css/index.css">
 <script src="../../static/js/animation.js" defer></script>
 {% endblock %}
-{% block overlay %}
-<!--HEADER AND WHY CHOOSE US-->
+{% block content %}
+<!--HERO BANNER-->
 <section style="width: 100%;">
     <section id="content-wrapper">
-        <!--BACKGROUND ILLUSTRATION ONE-->
-        <div class="overlay1"></div>
-{% endblock %}
-{% block content %}
-<!--HERO BANNER TEXT-->
-<div class="row hero-text-wrapper">
-    <div class="container hero-text-container">
-        <span id="hero-text">Grow your online business faster!</span>
-    </div>
-    <div class="container hero-text-2-container">
-        <span id="hero-text-2">Claim your free 30-minute strategy session</span>
-    </div>
-</div>
-<!--END HERO BANNER TEXT-->
+        <div class="overlay1">
+            <div class="row hero-text-wrapper">
+                <div class="row container hero-text-container">
+                    <span id="hero-text">Grow your online business faster!</span>
+                </div>
+                <div class="row form-wrapper">
+                    <form class="main-form">
+                        <div class="form-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="        FirstName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <i class="far fa-envelope fa-lg"></i>
+                            <input type="email" placeholder="          Email" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="row container hero-text-2-container">
+                    <span id="hero-text-2">Claim your free 30-minute strategy session</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--END HERO BANNER-->
 
 <!--SERVICE CARDS FOR PC VIEW-->
 <div class="row card-wrapper" id="service-cards-lg">
+    <div class="row cards-headline-wrapper">
+        <div class="cards-headline">
+            <h1>OUR SERVICES</h1>
+        </div>
+    </div>
     <div class="container card-container">
         <div class="col-xs-2 card-content" id="card1">
             <a href="/socialmedia">
@@ -192,7 +208,7 @@
 
 
 <!--SOCIAL MEDIA MARKETING-->
-<section id='crow2'>
+<section class='crow2' id="ssmedia">
     <div class="row">
         <div class="col-xs-12 col-md-6 first-half">
             <div class="row">
@@ -204,7 +220,7 @@
             <div class="row button-section2">
                 <div class="container">
                     <a href="/socialmedia" target="_self">
-                        <button class="btn know-more" id="scl-mkt3">Know More <span class="glyphicon glyphicon-chevron-down" style="color: rgb(185, 185, 185);padding:2px;position: relative;top:4px;"></button>
+                        <button class="btn know-more" id="scl-mkt3">Know More <span class="glyphicon glyphicon-chevron-down" style="color: #6b8c89;padding:2px;position: relative;top:4px;"></button>
                     </a>
                 </div>
             </div>
@@ -212,7 +228,7 @@
         <div class="col-xs-12 col-md-6" id="illustration-2">
             <div class="container">
                 <div class="col-xs-12 illustration-align">
-                    <img src="../static/assets/social med.png" class='img-responsive' id="social-marketing1">
+                    <img src="../../static/assets/sm.png" class='img-responsive' id="social-marketing1">
                 </div>
             </div>
         </div>
@@ -220,7 +236,7 @@
         <div class="col-xs-12 col-md-6" id="illustration-2-m">
             <div class="container">
                 <div class="col-xs-12 illustration-align">
-                    <img src="../static/assets/social med m.png" class='img-responsive' id="social-marketing1">
+                    <img src="../../static/assets/sm.png" class='img-responsive' id="social-marketing1">
                 </div>
             </div>
         </div>
@@ -228,59 +244,27 @@
 </section>
 <!--SOCIAL MEDIA MARKETING END-->
 
+<section class="row" style="width:100%;min-height:10vh;margin:0;padding:0;"></section>
 
-<!--BUSINESS CARDS-->
-<section id="crow3">
+<!--Web development and design-->
+<section class="crow3" id="wddesign">
     <div class="row">
-        <div class="container">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                    <div class="card-body" >
-                        <div class="card-title text-center">
-                            <span>STRATEGY</span>
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </div>
-                        <div class="card-text" id="card-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis doloremque.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title text-center">
-                            <span>CONTENTS</span>
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </div>
-                        <div class="card-text" id="card-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis doloremque.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title text-center">
-                            <span>PLATFORM</span>
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </div>
-                        <div class="card-text" id="card-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis doloremque.
-                        </div>
-                    </div>
+        <div class="col-xs-12 col-md-6" id="illustration-3">
+            <div class="container">
+                <div class="col-xs-12 illustration-align">
+                    <img src="../../static/assets/wdd.png" class='img-responsive' id="social-marketing">
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--BUSINESS CARDS End-->
-
-
-<!--Web development and design-->
-<section id="crow4">
-    <div class="row">
+        <!--Mobile Illustration-->
+        <div class="col-xs-12 col-md-6" id="illustration-3-m">
+            <div class="container">
+                <div class="col-xs-12 illustration-align">
+                    <img src="../../static/assets/wdd.png" class='img-responsive' id="social-marketing">
+                </div>
+            </div>
+        </div>
+        <!--Mobile Illustration End-->
         <div class="col-xs-12 col-md-6 first-half">
             <div class="row">
                 <span class="col-xs-12 col-md-8 heading" id="web-dev1">WEB DEVELOPMENT & DESIGN</span>
@@ -291,34 +275,19 @@
             <div class="row button-section2">
                 <div class="container">
                     <a href="/wd" target="_self">
-                        <button class="btn know-more" id="web-dev3">Know More <span class="glyphicon glyphicon-chevron-right" style="color: rgb(107, 107, 107);padding:2px;position: relative;top:2px;"></button>
+                        <button class="btn know-more" id="web-dev3">Know More <span class="glyphicon glyphicon-chevron-right" style="color: #bfdbda;padding:2px;position: relative;top:2px;"></button>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-md-6" id="illustration-3">
-            <div class="container">
-                <div class="col-xs-12 illustration-align">
-                    <img src="../static/assets/webdev.png" class='img-responsive' id="social-marketing">
-                </div>
-            </div>
-        </div>
-        <!--Mobile Illustration-->
-        <div class="col-xs-12 col-md-6" id="illustration-3-m">
-            <div class="container">
-                <div class="col-xs-12 illustration-align">
-                    <img src="../static/assets/web dev m.png" class='img-responsive' id="social-marketing">
-                </div>
-            </div>
-        </div>
-        <!--Mobile Illustration Ends-->
     </div>
 </section>
 <!--Web development and design end-->
 
+<section class="row" style="width:100%;min-height:10vh;margin:0;padding:0;"></section>
+
 <!--Graphic Design-->
-<section class="row" style="width:100%;min-height:10vh;background-color: white;"></section>
-<section id="crow5" style="background-color: #1c2d2ce6;padding-bottom: 0;">
+<section class="crow2" id="graphic">
     <div class="row">
         <div class="col-xs-12 col-md-6 first-half">
             <div class="row">
@@ -330,23 +299,23 @@
             <div class="row button-section2">
                 <div class="container">
                     <a href="/graphics" target="_blank">
-                        <button class="btn know-more" id="gr-ds3">Know More <span class="glyphicon glyphicon-chevron-right" style="color: rgb(107, 107, 107);padding:2px;position: relative;top:2px;"></button>
+                        <button class="btn know-more" id="gr-ds3">Know More <span class="glyphicon glyphicon-chevron-right" style="color: #48929a;padding:2px;position: relative;top:2px;"></button>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-md-6" id="illustration-4">
+        <div class="col-xs-12 col-md-6" id="illustration-2">
             <div class="container">
                 <div class="col-xs-12 illustration-align">
-                    <img src="../static/assets/grapic d.png" class='img-responsive' id="social-marketing">
+                    <img src="../../static/assets/graphic ds.png" class='img-responsive' id="social-marketing">
                 </div>
             </div>
         </div>
         <!--Mobile Illustration-->
-        <div class="col-xs-12 col-md-6" id="illustration-4-m">
+        <div class="col-xs-12 col-md-6" id="illustration-2-m">
             <div class="container">
                 <div class="col-xs-12 illustration-align">
-                    <img src="../static/assets/grapic m.png" class='img-responsive' id="social-marketing">
+                    <img src="../../static/assets/graphic ds.png" class='img-responsive' id="social-marketing">
                 </div>
             </div>
         </div>
@@ -355,6 +324,45 @@
 </section>
 <!--Graphic Design Ends-->
 
+<section class="row" style="width:100%;min-height:10vh;margin:0;padding:0;"></section>
+
+<!--STRATEGY-->
+<section class="crow3" id="strategy">
+    <div class="row">
+        <div class="col-xs-12 col-md-6" id="illustration-3">
+            <div class="container">
+                <div class="col-xs-12 illustration-align">
+                    <img src="../../static/assets/strategy.png" class='img-responsive' id="social-marketing">
+                </div>
+            </div>
+        </div>
+        <!--Mobile Illustration-->
+        <div class="col-xs-12 col-md-6" id="illustration-3-m">
+            <div class="container">
+                <div class="col-xs-12 illustration-align">
+                    <img src="../../static/assets/strategy.png" class='img-responsive' id="social-marketing">
+                </div>
+            </div>
+        </div>
+        <!--Mobile Illustration End-->
+        <div class="col-xs-12 col-md-6 first-half">
+            <div class="row">
+                <span class="col-xs-12 col-md-8 heading" id="web-dev1">STRATEGY</span>
+            </div>
+            <div class="row">
+                <div class="s-text col-xs-12 col-md-10" id="web-dev2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vel corrupti nihil, culpa mollitia iusto at quaerat sunt ipsam totam maiores placeat, laborum doloribus perspiciatis. Quas vitae aspernatur rem voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda fuga odit repellendus deleniti itaque, vitae non pariatur, voluptatum aut excepturi, similique facilis dicta incidunt nesciunt blanditiis dolore expedita minima?</div>
+            </div>
+            <div class="row button-section2">
+                <div class="container">
+                    <a href="/wd" target="_self">
+                        <button class="btn know-more" id="web-dev3">Know More <span class="glyphicon glyphicon-chevron-right" style="color: #296866;padding:2px;position: relative;top:2px;"></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--STRATEGY END-->
 
 <!--WHY CHOOSE US-->
 <section id='crow6'>
