@@ -14,7 +14,7 @@ $footerBgColor:#0b2d35;
 body{
     width: 100vw;
     margin:0;
-    height:100vh;
+    background-color: #f2f9f9;
     overflow-x: hidden;
 }
 html{
@@ -309,6 +309,9 @@ html{
         background-color: $navbarColor;
         color:black;
     }
+    .navbar .color-layer {
+        background-color: transparent;
+    }
     .navbar-toggle{
         border:none;
     }
@@ -411,7 +414,10 @@ html{
             padding-right:0px;
         }
         .footer-right{
-            padding:50px 5px 20px 10px;
+            padding:50px 0px 20px 0px;
+            .footer-btn{
+                font-size: 9px;
+            }
             .row{
                 padding:10px;
                 padding-right:0px;

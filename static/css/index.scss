@@ -6,12 +6,16 @@ $heroFormColor:#e9fffe;
 $registerBtnColor:#8ef4e0;
 $smmBgColor:#cef4f4;
 $knowMoreBtn1:#dcf9f8;
+$knowMoreBtn1HoverColor:#4e6967;
 $wddBgColor:#597e89;
 $knowMoreBtn2:#6f979e;
+$knowMoreBtn2HoverColor:#c2f5f3;
 $gdBgColor:#1f363b;
 $KnowMoreBtn3:#264247;
+$KnowMoreBtn3HoverColor:#2abccc;
 $stgBgColor:#031a1c;
 $KnowMoreBtn4:#062223;
+$KnowMoreBtn4HoverColor:#2abccc;
 $wcuTitleColor:#276a6d;
 $carouselIndicatorColor:#b5b5b5;
 $footerBgColor:#0b2d35;
@@ -23,9 +27,6 @@ $footerBgColor:#0b2d35;
 }
 *{
     font-family: bahnschrift;
-}
-body{
-    background-color: #f2f9f9;
 }
 // FIRST BACKGROUND IMAGE
 .overlay1{
@@ -58,7 +59,7 @@ body{
                 i{
                     position: relative;
                     left:15px;
-                    top:32px;
+                    top:35px;
                 }
             }
             .form-control{
@@ -320,7 +321,7 @@ body{
             color:#6b8c89;
         }
         .know-more:hover{
-            color:#4e6967;
+            color:$knowMoreBtn1HoverColor;
             transition: 0.2s ease-in-out;
         }
      }
@@ -359,7 +360,7 @@ body{
             color:#bfdbda;
         }
         .know-more:hover{
-            color:#c2f5f3;
+            color:$knowMoreBtn2HoverColor;
             transition: 0.2s ease-in-out;
         }
     }
@@ -387,7 +388,7 @@ body{
            color:#48929a;
        }
        .know-more:hover{
-           color:#2abccc;
+           color:$KnowMoreBtn3HoverColor;
            transition: 0.2s ease-in-out;
        }
    }
@@ -412,7 +413,7 @@ body{
            color:#296866;
        }
        .know-more:hover{
-           color:#2abccc;
+           color:$KnowMoreBtn4HoverColor;
            transition: 0.2s ease-in-out;
        }
    }
@@ -497,12 +498,12 @@ body{
 }
 
 
-//--------MEDIA QUERIES---------
+//-----------------------MEDIA QUERIES-------------------------------
 @media screen and (max-width:768px){
     .overlay1{
         display:none;
     }
-    //SERVICE TABS MOBILE
+    //----------------------SERVICE TABS MOBILE--------------------------
     .card-wrapper,.flexbox,.hero-text-wrapper{
         display: none;
     }
@@ -587,30 +588,31 @@ body{
             }
         }
     }
-    //END SERVICE TABS MOBILE
+    //---------------------------END SERVICE TABS MOBILE-----------------------
 
 
-    //BUSINESS SECTION
+    //-------------------------------BUSINESS SECTION--------------------------
     #business-section{
         transform: translateY(-4vh);
     }
 
-    //UNMATCHED SERVICES
+    //------------------------------UNMATCHED SERVICES---------------------------
     #crow1{
         width:95%;
         margin:auto;
         .text-area{
-            padding-top: 0px;
+            padding: 0px;
             #heading{
                 padding: 10px 5px 10px 5px;
                 #bs1a{
                     #text-sec1{
-                        padding:10px 20px;
+                        padding:10px 0px;
                     }
                 }
                 #bs1b{
+                    padding:0px;
                     #text-sec2{
-                        padding:20px;
+                        padding:0px;
                     }
                 }
             }
@@ -637,178 +639,70 @@ body{
     #serv-img{
         display: none;
     }
-    //END UNMATCHED SERVICES
+    //---------------------------END UNMATCHED SERVICES-----------------------------
 
-    //SOCIAL MEDIA MARKETING
-    #crow2{
+    //-----------------------SOCIAL MEDIA MARKETING, GRAPHICS-----------------------
+    .crow2,.crow3{
         border-radius: 20px;
-        padding: 30px 15px;
+        padding-bottom: 40px;
         .row{
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column-reverse;          
             .first-half{
-                padding-top: 10px;
-            }
-            #scl-mkt1{
-                font-size: 18px;
-                font-weight: bold;
-                font-family: bahnschrift;
+                padding: 0px;
                 text-align: center;
-                padding:0;
-            }
-            #scl-mkt2{
-                font-size:14px;
-                text-align: center;
-                padding:8px;
-            }
-            .button-section2{
-                .container{
+                #scl-mkt1, #gr-ds1,#web-dev1{
                     text-align: center;
-                    padding:0;
+                    padding: 0px 50px;
+                    font-size: 23px;
                 }
-            }
-            #illustration-2{
-               display: none;
-            }
-            #illustration-2-m{
-                display: block;
-                width: 100%;
-                padding-bottom: 20px;
-                .container{
-                    width:90%;
-                    margin:auto;
+                #scl-mkt2, #gr-ds2,#web-dev2{
+                    padding: 20px 50px;
+                    text-align: center;
+                }
+                .button-section2{
+                    .container{
+                        width:50%;
+                        margin:auto;
+                    }
                 }
             }
         }
     }
-    //END SOCIAL MEDIA MARKETING
+    //----------------------END SOCIAL MEDIA MARKETING, GRAPHICS-----------------
 
-    //STRATEGY , CONTENT ,PLATFORM
-    #crow3{
-        #card-text{
-            display: none;
-        }
-    }
-    #crow3 .row .container {
-        width:100%;
-        padding:0px;
-    }
-    #crow3 .row .container .card {
-        height: 30px;
-        border-radius: 50rem;
-        width:98%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin:10px auto;
-        .card-body{
-            padding:0px;
-            width:85%;
-            margin:auto;
-            .card-title{
-                padding:0px;
-                display: flex;
-                justify-content: space-between;
-                span{
-                    font-size: 15px;
-                    display: flex;
-                    align-items: center;
-                    font-weight: bold;
-                }
-                .glyphicon{
-                    font-size: 15px;
-                    display: flex;
-                    align-items: center;
-                }
-            }
-        }
-    }
-    // END STRATEGY, CONTENT, PLATFORM
-
-    //WEB DEVELOPMENT & DESIGN
-    #crow4{
-        border-radius: 20px;
-        padding: 30px 15px;
+    //-------------------------------WD&D AND STRATEGY--------------------------------
+    .crow3{
         .row{
-            display: flex;
-            flex-direction: column-reverse;
-            .first-half{
-                padding-left:0;
-                padding-top: 10px;
-            }
-            #web-dev1{
-                text-align: center;
-                font-size: 18px;
-                font-weight: bold;
-                padding:0px;
-            }
-            #web-dev2{
-                font-size:14px;
-                text-align: center;
-                padding:20px 60px;
-            }
-            .button-section2{
-                .container{
-                    text-align: center;
-                }
-            }
+            flex-direction: column;
         }
+    }
+    //------------------------------END WD&D AND STRATEGY------------------------------
+
+
+    //-----------------------------INDIVIDUAL SECTION STYLES------------------------------
+    #ssmedia,#graphic{
+        #illustration-2{
+            .container{
+                padding:0px;
+                width:90%;
+                margin:auto;
+            }
+        } 
+    }
+    #wddesign,#strategy{
         #illustration-3{
-            display: none;
-        }
-        #illustration-3-m{
-            display: block;
             .container{
-                width:100%;
-                padding-bottom:20px;
+                padding:0px;
+                width:90%;
+                margin:auto;
             }
         }
     }
-    //END WEB DEVELOPMENT & DESIGN
+    //------------------------------END INDIVIDUAL STYLES-----------------------------
 
-    //GRAPHIC DESIGN
-    #crow5{
-        border-radius: 20px;
-        padding: 30px 15px;
-        .row{
-            display: flex;
-            flex-direction: column-reverse;
-            .first-half{
-                padding-left:0;
-                padding-top: 10px;
-            }
-            #gr-ds1{
-                text-align: center;
-                font-size: 18px;
-                font-weight: bold;
-                padding:10px;
-            }
-            #gr-ds2{
-                font-size:14px;
-                text-align: center;
-                padding:10px 60px;
-            }
-            .button-section2{
-                padding-bottom: 20px;
-                .container{
-                    text-align: center;
-                }
-            }
-        }
-        #illustration-4{
-            display: none;
-        }
-        #illustration-4-m{
-            display: block;
-            .container{
-                width:100%;
-                padding-bottom:20px;
-            }
-        }
-    }
-    //END GRAPHIC DESIGN
 
-    //WHY CHOOSE US
+    //----------------------------------WHY CHOOSE US-----------------------------
     #crow6{
         display: none;
     }
@@ -856,20 +750,24 @@ body{
             }
         }
     }
-    //END WHY CHOOSE US
-}
-@media (min-height:768px) and (max-height:880px){
-    #business-section{
-        transform: translateY(-14vh);
+    //---------------------------------END WHY CHOOSE US-----------------------------
+    #crow7{
+        position:relative;
+        bottom:0;
+        .footer-right-wrapper{
+            .footer-right{
+                padding-top:40px;
+                .footer-right-row-1{
+                    #heading-wrapper{
+                        text-align: center;
+                        #heading{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-@media (max-height:768px){
-    #business-section{
-        transform: translateY(-3vh);
-    }
-}
-@media (max-height:640px) and (max-width:384px){
-    #business-section{
-        transform: translateY(5vh);
-    }
-}
+
+//-----------------------------END STYLES--------------------------------------------

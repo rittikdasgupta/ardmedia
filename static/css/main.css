@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   margin: 0;
-  height: 100vh;
+  background-color: #f2f9f9;
   overflow-x: hidden;
 }
 
@@ -376,6 +376,9 @@ html {
     background-color: #3b474f;
     color: black;
   }
+  .navbar .color-layer {
+    background-color: transparent;
+  }
   .navbar-toggle {
     border: none;
   }
@@ -489,7 +492,10 @@ html {
     padding-right: 0px;
   }
   #crow7 .footer-right {
-    padding: 50px 5px 20px 10px;
+    padding: 50px 0px 20px 0px;
+  }
+  #crow7 .footer-right .footer-btn {
+    font-size: 9px;
   }
   #crow7 .footer-right .row {
     padding: 10px;
