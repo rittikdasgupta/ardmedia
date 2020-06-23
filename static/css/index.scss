@@ -86,20 +86,28 @@ $footerBgColor:#0b2d35;
             color:$heroTextColor;
         }
     }
-    .hero-text-2-container{
+    .container{
         width:80%;
         text-align: center;
         padding:0px;
         margin:auto;
-        #hero-text-2{
-            font-family: bahnschrift;
-            font-weight: lighter;
-            font-size: 2vw;
-            color:#363636;
+        .hero-text-2-container{
+            width:60%;
+            margin:auto;
             background-color: $heroTextTwoColor;
             border-radius: 50rem;
             padding:10px 20px;
             box-shadow: 6px 3px 5px #4e4e4e, -6px -3px 6px #c0fbebab;
+            transition:transform 0.48s ease-in-out;
+            .hero-text-2{
+                font-family: bahnschrift;
+                font-weight: lighter;
+                font-size: 2vw;
+                color:#363636;
+            }
+        }
+        .hero-text-2-container:hover{
+            transform:translateY(-10px);
         }
     }
 }
@@ -133,6 +141,7 @@ $footerBgColor:#0b2d35;
             border-radius: 20px;
             box-shadow: 8px 8px 10px #afafaf, -8px -8px 10px #fffffff2;
             text-align: center;
+            transition: box-shadow 0.3s ease-in-out;
             #card-text{
                 color:black;
                 font-family: bahnschrift;
@@ -170,6 +179,9 @@ $footerBgColor:#0b2d35;
                     }
                 }
             }
+        }
+        .card-content:hover{
+            box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
         }
         #card3,#card4{
             padding:30px 0px;
@@ -319,10 +331,12 @@ $footerBgColor:#0b2d35;
             font-size: 15px;
             background-color: $knowMoreBtn1;
             color:#6b8c89;
+            transition:box-shadow 0.2s ease-in-out;
         }
         .know-more:hover{
             color:$knowMoreBtn1HoverColor;
-            transition: 0.2s ease-in-out;
+            box-shadow: 6px 5px 6px #0000008f, -4px -3px 6px #f7ffffde;
+            
         }
      }
      #illustration-2{
@@ -358,10 +372,11 @@ $footerBgColor:#0b2d35;
             font-size: 15px;
             background-color: $knowMoreBtn2;
             color:#bfdbda;
+            transition:box-shadow 0.2s ease-in-out;
         }
         .know-more:hover{
             color:$knowMoreBtn2HoverColor;
-            transition: 0.2s ease-in-out;
+            box-shadow: 4px 4px 8px #0000008f, -2px -3px 5px #bbe5e5a3;
         }
     }
 }
@@ -386,10 +401,12 @@ $footerBgColor:#0b2d35;
            font-size: 15px;
            background-color: $KnowMoreBtn3;
            color:#48929a;
+           transition:box-shadow 0.2s ease-in-out;
        }
        .know-more:hover{
            color:$KnowMoreBtn3HoverColor;
-           transition: 0.2s ease-in-out;
+           box-shadow: 4px 4px 8px #000000, -2px -3px 5px #346e66;
+           
        }
    }
 }
@@ -410,11 +427,13 @@ $footerBgColor:#0b2d35;
            font-family: bahnschrift;
            font-size: 15px;
            background-color: $KnowMoreBtn4;
-           color:#296866;
+           color:#249490;
+           transition:box-shadow 0.2s ease-in-out;
        }
        .know-more:hover{
            color:$KnowMoreBtn4HoverColor;
-           transition: 0.2s ease-in-out;
+           box-shadow: 6px 6px 8px black, -2px -3px 5px #346e66;
+           
        }
    }
    #illustration-3{
@@ -433,7 +452,7 @@ $footerBgColor:#0b2d35;
        display: none;
    }
 }
-#crow6{
+/*#crow6{
     width: 100%;
     padding:50px;
     .container{
@@ -488,6 +507,33 @@ $footerBgColor:#0b2d35;
     }
     .timeline-dot:hover{
         box-shadow: -1px -1px 10px 4px rgba(0,0,0,0.1);
+    }
+}
+.carousel-large-wrapper{
+    width:90%;
+    margin:auto;
+    display: flex;
+}*/
+#crow6{
+    padding:50px 0px;
+    .promise-cards-wrapper{
+        padding:20px;
+        .promise-cards{
+            padding:20px;
+        }
+        .tab-icon-wrapper{
+            width:80px;
+            height:80px;
+            margin:auto;
+            border-radius: 50rem;
+            background-color: #ace2e2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .tab-icon{
+                color:teal;
+            }
+        }
     }
 }
 #crow6-mobile{
@@ -703,12 +749,12 @@ $footerBgColor:#0b2d35;
 
 
     //----------------------------------WHY CHOOSE US-----------------------------
-    #crow6{
+    /*#crow6{
         display: none;
-    }
+    }*/
     #crow6-mobile{
-        display: block;
-        padding-top:30px;
+        display: none;
+        /*padding-top:30px;
         padding-bottom: 10px;
         #crow6-mobile-heading{
             font-size:25px;
@@ -749,6 +795,7 @@ $footerBgColor:#0b2d35;
                 }
             }
         }
+        */
     }
     //---------------------------------END WHY CHOOSE US-----------------------------
     #crow7{

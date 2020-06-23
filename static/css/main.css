@@ -104,8 +104,11 @@ html {
   color: #3b474f;
 }
 
-.navbar .navcont .flexbox .sub-nav .items .item:hover {
-  border-bottom: 1px solid white;
+.navbar .navcont .flexbox .sub-nav .items:hover {
+  -webkit-box-shadow: 2px 2px 12px #c4c4c4,  -4px -3px 8px #ffffff;
+          box-shadow: 2px 2px 12px #c4c4c4,  -4px -3px 8px #ffffff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .navbar .hamburger {

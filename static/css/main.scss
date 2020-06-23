@@ -82,9 +82,11 @@ html{
                             color:$knowMoreBtn1;
                         }
                     }
-                    .item:hover{
-                        border-bottom: 1px solid white;
-                    }
+                }
+                .items:hover{
+                    box-shadow:2px 2px 12px #c4c4c4, 
+                               -4px -3px 8px #ffffff;
+                               transition: 0.2s ease-in-out;
                 }
             }
         }

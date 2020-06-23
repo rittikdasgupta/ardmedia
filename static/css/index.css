@@ -101,23 +101,37 @@
   color: #0b6b68;
 }
 
-.hero-text-wrapper .hero-text-2-container {
+.hero-text-wrapper .container {
   width: 80%;
   text-align: center;
   padding: 0px;
   margin: auto;
 }
 
-.hero-text-wrapper .hero-text-2-container #hero-text-2 {
-  font-family: bahnschrift;
-  font-weight: lighter;
-  font-size: 2vw;
-  color: #363636;
+.hero-text-wrapper .container .hero-text-2-container {
+  width: 60%;
+  margin: auto;
   background-color: #dff7f6;
   border-radius: 50rem;
   padding: 10px 20px;
   -webkit-box-shadow: 6px 3px 5px #4e4e4e, -6px -3px 6px #c0fbebab;
           box-shadow: 6px 3px 5px #4e4e4e, -6px -3px 6px #c0fbebab;
+  -webkit-transition: -webkit-transform 0.48s ease-in-out;
+  transition: -webkit-transform 0.48s ease-in-out;
+  transition: transform 0.48s ease-in-out;
+  transition: transform 0.48s ease-in-out, -webkit-transform 0.48s ease-in-out;
+}
+
+.hero-text-wrapper .container .hero-text-2-container .hero-text-2 {
+  font-family: bahnschrift;
+  font-weight: lighter;
+  font-size: 2vw;
+  color: #363636;
+}
+
+.hero-text-wrapper .container .hero-text-2-container:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .card-wrapper {
@@ -160,6 +174,10 @@
   -webkit-box-shadow: 8px 8px 10px #afafaf, -8px -8px 10px #fffffff2;
           box-shadow: 8px 8px 10px #afafaf, -8px -8px 10px #fffffff2;
   text-align: center;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 .card-wrapper .card-container .card-content #card-text {
@@ -204,6 +222,11 @@
   background-color: #8ef4e0;
   padding: 5px 12px;
   border-radius: 50rem;
+}
+
+.card-wrapper .card-container .card-content:hover {
+  -webkit-box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
+          box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
 }
 
 .card-wrapper .card-container #card3, .card-wrapper .card-container #card4 {
@@ -385,12 +408,16 @@
   font-size: 15px;
   background-color: #dcf9f8;
   color: #6b8c89;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 #ssmedia .button-section2 .know-more:hover {
   color: #4e6967;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 6px 5px 6px #0000008f, -4px -3px 6px #f7ffffde;
+          box-shadow: 6px 5px 6px #0000008f, -4px -3px 6px #f7ffffde;
 }
 
 #ssmedia #illustration-2 {
@@ -435,12 +462,16 @@
   font-size: 15px;
   background-color: #6f979e;
   color: #bfdbda;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 #wddesign .button-section2 .know-more:hover {
   color: #c2f5f3;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 4px 4px 8px #0000008f, -2px -3px 5px #bbe5e5a3;
+          box-shadow: 4px 4px 8px #0000008f, -2px -3px 5px #bbe5e5a3;
 }
 
 #graphic {
@@ -471,12 +502,16 @@
   font-size: 15px;
   background-color: #264247;
   color: #48929a;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 #graphic .button-section2 .know-more:hover {
   color: #2abccc;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 4px 4px 8px #000000, -2px -3px 5px #346e66;
+          box-shadow: 4px 4px 8px #000000, -2px -3px 5px #346e66;
 }
 
 #strategy {
@@ -502,13 +537,17 @@
   font-family: bahnschrift;
   font-size: 15px;
   background-color: #062223;
-  color: #296866;
+  color: #249490;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
 #strategy .button-section2 .know-more:hover {
   color: #2abccc;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 6px 6px 8px black, -2px -3px 5px #346e66;
+          box-shadow: 6px 6px 8px black, -2px -3px 5px #346e66;
 }
 
 #strategy #illustration-3 {
@@ -530,83 +569,99 @@
   display: none;
 }
 
+/*#crow6{
+    width: 100%;
+    padding:50px;
+    .container{
+        width: 95%;
+        padding:0px 100px 20px 100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .timeline-dot{
+            width:24px;
+            height:24px;
+            border:1px solid #5353534f;
+            background-color: #5353534f;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            .timeline-dot2{
+                position: relative;
+                display: inline-block;
+                width:10px;
+                height:10px;
+                border:1px solid #3f3f3f6e;
+                background-color: #3f3f3f6e;
+                border-radius: 50%;
+                margin: auto;
+                top:auto;
+            }
+        }
+        #hr{
+            width:48%;
+            height:24px;
+            margin-top: 10px;
+            hr{
+                height:1px;
+                background-color:#5353534f;
+                margin:0;
+            }
+        }
+    }
+    .text-cont{
+        width: 100%;
+        padding:40px 10px 20px 10px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .timeline-text{
+            margin:0;
+            font-family: bahnschrift;
+            font-size: 20px;
+            color:#5353534f;
+        }
+    }
+    .timeline-dot:hover{
+        box-shadow: -1px -1px 10px 4px rgba(0,0,0,0.1);
+    }
+}
+.carousel-large-wrapper{
+    width:90%;
+    margin:auto;
+    display: flex;
+}*/
 #crow6 {
-  width: 100%;
-  padding: 50px;
+  padding: 50px 0px;
 }
 
-#crow6 .container {
-  width: 95%;
-  padding: 0px 100px 20px 100px;
+#crow6 .promise-cards-wrapper {
+  padding: 20px;
+}
+
+#crow6 .promise-cards-wrapper .promise-cards {
+  padding: 20px;
+}
+
+#crow6 .promise-cards-wrapper .tab-icon-wrapper {
+  width: 80px;
+  height: 80px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#crow6 .container .timeline-dot {
-  width: 24px;
-  height: 24px;
-  border: 1px solid #5353534f;
-  background-color: #5353534f;
-  border-radius: 50%;
+  border-radius: 50rem;
+  background-color: #ace2e2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#crow6 .container .timeline-dot .timeline-dot2 {
-  position: relative;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #3f3f3f6e;
-  background-color: #3f3f3f6e;
-  border-radius: 50%;
-  margin: auto;
-  top: auto;
-}
-
-#crow6 .container #hr {
-  width: 48%;
-  height: 24px;
-  margin-top: 10px;
-}
-
-#crow6 .container #hr hr {
-  height: 1px;
-  background-color: #5353534f;
-  margin: 0;
-}
-
-#crow6 .text-cont {
-  width: 100%;
-  padding: 40px 10px 20px 10px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#crow6 .text-cont .timeline-text {
-  margin: 0;
-  font-family: bahnschrift;
-  font-size: 20px;
-  color: #5353534f;
-}
-
-#crow6 .timeline-dot:hover {
-  -webkit-box-shadow: -1px -1px 10px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: -1px -1px 10px 4px rgba(0, 0, 0, 0.1);
+#crow6 .promise-cards-wrapper .tab-icon-wrapper .tab-icon {
+  color: teal;
 }
 
 #crow6-mobile {
@@ -798,51 +853,53 @@
     width: 90%;
     margin: auto;
   }
-  #crow6 {
-    display: none;
-  }
+  /*#crow6{
+        display: none;
+    }*/
   #crow6-mobile {
-    display: block;
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
-  #crow6-mobile #crow6-mobile-heading {
-    font-size: 25px;
-  }
-  #crow6-mobile #whyChooseUs {
-    padding-bottom: 40px;
-  }
-  #crow6-mobile .indicators {
-    display: block;
-    height: 20px;
-  }
-  #crow6-mobile .indicators .carousel-indicators li {
-    background-color: #b5b5b5;
-  }
-  #crow6-mobile .item {
-    padding-top: 30px;
-    padding-bottom: 40px;
-    width: 95%;
-    margin: auto;
-  }
-  #crow6-mobile .items {
-    padding: 20px;
-  }
-  #crow6-mobile .items .card {
-    padding: 25px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 16px 4px #525252;
-            box-shadow: 0px 0px 16px 4px #525252;
-  }
-  #crow6-mobile .items .card .card-title {
-    text-align: center;
-    font-family: bahnschrift;
-    font-size: 20px;
-    color: #276a6d;
-    padding-bottom: 10px;
-  }
-  #crow6-mobile .items .card .card-text {
-    text-align: center;
+    display: none;
+    /*padding-top:30px;
+        padding-bottom: 10px;
+        #crow6-mobile-heading{
+            font-size:25px;
+        }
+        #whyChooseUs{
+            padding-bottom:40px;
+        }
+        .indicators{
+            display:block;
+            height:20px;
+            .carousel-indicators{
+                li{
+                    background-color:$carouselIndicatorColor;
+                }
+            }
+        }
+        .item{
+            padding-top:30px;
+            padding-bottom:40px;   
+            width:95%;
+            margin:auto;    
+        }
+        .items{
+            padding:20px;
+            .card{
+                padding:25px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 16px 4px rgba(82,82,82,1);
+                .card-title{
+                    text-align: center;
+                    font-family: bahnschrift;
+                    font-size: 20px;
+                    color:$wcuTitleColor;
+                    padding-bottom: 10px;
+                }
+                .card-text{
+                    text-align: center;
+                }
+            }
+        }
+        */
   }
   #crow7 {
     position: relative;

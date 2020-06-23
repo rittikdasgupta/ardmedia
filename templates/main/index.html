@@ -1,6 +1,7 @@
 {% extends "main/main.html" %}
 {% block link %}
 <link rel="stylesheet" type="text/css" href="../../static/css/index.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/all.min.css">
 <script src="../../static/js/animation.js" defer></script>
 {% endblock %}
 {% block content %}
@@ -24,8 +25,10 @@
                         </div>
                     </form>
                 </div>
-                <div class="row container hero-text-2-container">
-                    <span id="hero-text-2">Claim your free 30-minute strategy session</span>
+                <div class="row container">
+                    <div class="hero-text-2-container">
+                        <span class="hero-text-2">Claim your free 30-minute strategy session</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -340,38 +343,53 @@
 
 <!--WHY CHOOSE US-->
 <section id='crow6'>
-    <div class="row text-center">
-        <h1 style="font-family: Arial, Helvetica, sans-serif;font-weight:600;">Why Choose Us?</h1>
-    </div>
-    <div class="row">
-        <div class="container text-cont">
-            <div class="timeline-text col-xs-3" id="a1">Indepth Knowledge</div>
-            <div class="timeline-text col-xs-4 text-center" id="a2">Competive Pricing</div>
-            <div class="timeline-text col-xs-3 text-right" id="a3">Money Back Guarantee</div>
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4 ">WHY CHOOSE US?</h1>
+          </div>
+          <div class="promise-cards-wrapper">
+                <div class="promise-cards-content">
+                    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center col-xs-12 col-md-4 promise-cards">
+                            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-5 flex-shrink-0">
+                                <div class="tab-icon-wrapper">
+                                    <i class="far fa-eye fa-3x tab-icon"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Indepth Knowledge</h2>
+                                <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur deserunt alias dolorum enim praesentium maiores architecto dolores voluptate accusamus, est, non possimus blanditiis. In praesentium impedit cupiditate. Minima, aut cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt iure ab voluptates optio dolore repudiandae sequi sit, eum ipsa alias eaque impedit facere earum voluptate quidem debitis laborum a!</p>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center col-xs-12 col-md-4 promise-cards">
+                            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-5 flex-shrink-0">
+                                <div class="tab-icon-wrapper">
+                                    <i class="fas fa-bullseye fa-3x tab-icon"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Competitive Pricing</h2>
+                                <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur deserunt alias dolorum enim praesentium maiores architecto dolores voluptate accusamus, est, non possimus blanditiis. In praesentium impedit cupiditate. Minima, aut cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt iure ab voluptates optio dolore repudiandae sequi sit, eum ipsa alias eaque impedit facere earum voluptate quidem debitis laborum a!</p>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center col-xs-12 col-md-4 promise-cards">
+                            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-5 flex-shrink-0">
+                                <div class="tab-icon-wrapper">
+                                    <i class="fas fa-rupee-sign fa-3x tab-icon"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">MoneyBack Guarantee</h2>
+                                <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur deserunt alias dolorum enim praesentium maiores architecto dolores voluptate accusamus, est, non possimus blanditiis. In praesentium impedit cupiditate. Minima, aut cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt iure ab voluptates optio dolore repudiandae sequi sit, eum ipsa alias eaque impedit facere earum voluptate quidem debitis laborum a!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="container">
-            <div class="timeline-dot a1" type="button" id="a111">
-                <div class="timeline-dot2" id="a11"></div>
-            </div>
-            <span id="hr"><hr></span>
-            <div class="timeline-dot a2" type="button" id="a222">
-                <div class="timeline-dot2" id="a12"></div>
-            </div>
-            <span id="hr"><hr></span>
-            <div class="timeline-dot a3" type="button" id="a222">
-                <div class="timeline-dot2" id="a13"></div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="container" style="width:90%;">
-            <div class="col-xs-12 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui numquam exercitationem, expedita sapiente voluptate at ratione distinctio sequi provident iusto quidem porro consectetur officiis. Quod dolor mollitia officia nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet laborum, sit asperiores sint voluptates officiis perspiciatis autem id praesentium nostrum quam iste blanditiis maxime voluptatum dolor dignissimos necessitatibus ea! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa et consequatur voluptatibus corporis explicabo repudiandae expedita similique ullam nostrum officiis vitae, porro provident exercitationem sit quod sapiente, unde dolor incidunt?
-            </div>
-        </div>
-    </div>
+      </section>
 </section>
 <!--WHY CHOOSE US ENDS-->
 
@@ -437,5 +455,3 @@
 </section>
 <!--END MOBILE DESIGN CAROUSEL SLIDER-->
 {% endblock %}
-</body>
-</html>
