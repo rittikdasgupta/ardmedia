@@ -164,6 +164,7 @@ body{
     }
     #section10{
         .sec-wrapper{
+            margin-bottom:50px;
             .sec-inner{
                 padding-bottom: 40px;
                 .sec-text{
@@ -184,7 +185,7 @@ body{
 #section4-mobile{
     display: none;
 }
-@media screen and (max-width:768px){
+@media all and (max-width:768px){
     .slider-header{
         padding-bottom: 20px;
     }
@@ -237,10 +238,19 @@ body{
             display: block;
             .carousel{
                 padding-top:20px;
+                .indicators{
+                    .carousel-indicators{
+                        li{
+                            background-color: #f2f9f9;
+                            border:1px solid transparent;
+                        }
+                    }
+                }
                 .carousel-inner{
                     .item{
+                        padding:0px;
                         .card{
-                            padding:20px 20px;
+                            padding:20px 0px;
                             min-height: 320px;
                             .card-body{
                                 .card-title{
@@ -277,10 +287,9 @@ body{
                     width:100%;
                     margin:auto;
                     #row-list{
-                        padding:20px;
+                        padding:20px 0px;
                         .ul-list{
                             .list{
-
                                 .list-icon{
                                     text-align: center;
                                     img{
@@ -292,8 +301,7 @@ body{
                                     padding:10px 0px;
                                     font-size: 12px;
                                     text-align: center;
-                                }
-                                
+                                }                                
                             }
                         }
                     }
@@ -350,13 +358,16 @@ body{
         #section10{
             padding:10px 0px;
             .sec-wrapper{
+                padding:0px;
                 .sec-inner{
-                    padding:20px;
+                    padding:20px 0px;
+                    margin:40px auto;
                     .sec-text{
                         font-size: 18px;
                         padding:10px 0px;
                     }
                     .sec-slider{
+                        padding:0px;
                         #myCarousel{
                             .carousel-inner{
                                 border-radius: 10px;

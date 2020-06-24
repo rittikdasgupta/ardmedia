@@ -170,6 +170,10 @@ body {
   font-weight: normal;
 }
 
+#container-wrapper #section10 .sec-wrapper {
+  margin-bottom: 50px;
+}
+
 #container-wrapper #section10 .sec-wrapper .sec-inner {
   padding-bottom: 40px;
 }
@@ -187,7 +191,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .slider-header {
     padding-bottom: 20px;
   }
@@ -236,8 +240,15 @@ body {
   #container-wrapper #section4-mobile .carousel {
     padding-top: 20px;
   }
+  #container-wrapper #section4-mobile .carousel .indicators .carousel-indicators li {
+    background-color: #f2f9f9;
+    border: 1px solid transparent;
+  }
+  #container-wrapper #section4-mobile .carousel .carousel-inner .item {
+    padding: 0px;
+  }
   #container-wrapper #section4-mobile .carousel .carousel-inner .item .card {
-    padding: 20px 20px;
+    padding: 20px 0px;
     min-height: 320px;
   }
   #container-wrapper #section4-mobile .carousel .carousel-inner .item .card .card-body .card-title {
@@ -267,7 +278,7 @@ body {
     margin: auto;
   }
   #container-wrapper #section6 .sec-6 .icon-list #row-list {
-    padding: 20px;
+    padding: 20px 0px;
   }
   #container-wrapper #section6 .sec-6 .icon-list #row-list .ul-list .list .list-icon {
     text-align: center;
@@ -330,12 +341,19 @@ body {
   #container-wrapper #section10 {
     padding: 10px 0px;
   }
+  #container-wrapper #section10 .sec-wrapper {
+    padding: 0px;
+  }
   #container-wrapper #section10 .sec-wrapper .sec-inner {
-    padding: 20px;
+    padding: 20px 0px;
+    margin: 40px auto;
   }
   #container-wrapper #section10 .sec-wrapper .sec-inner .sec-text {
     font-size: 18px;
     padding: 10px 0px;
+  }
+  #container-wrapper #section10 .sec-wrapper .sec-inner .sec-slider {
+    padding: 0px;
   }
   #container-wrapper #section10 .sec-wrapper .sec-inner .sec-slider #myCarousel .carousel-inner {
     border-radius: 10px;

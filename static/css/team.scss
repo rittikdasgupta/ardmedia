@@ -23,7 +23,7 @@ body{
         margin: auto;
         display:flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         padding:5px 15px;
         .navbar-brand-mobile{
             display: flex;
@@ -156,7 +156,7 @@ body{
 }
 @media all and (max-width:768px){
     .navbar{
-        min-height:15vh;
+        min-height:10vh;
         border:1px solid #1c1c1c;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius:20px;
@@ -251,7 +251,7 @@ body{
         height:1px;
     }
 }
-@media all and (prefers-color-scheme: light){
+@media all and (prefers-color-scheme: light) , (prefers-color-scheme:dark){
     body{
         background-color: #ebebeb;
     }
@@ -306,10 +306,11 @@ body{
                 box-shadow: 10px 10px 10px #cccccc, 
                             -10px -10px 10px #fefefe;
                 border-bottom: 2px solid #02adad;
+                transition: box-shadow 0.2s ease-in-out;
             }
             .cards:hover{
-                border-bottom: 2px solid orangered;
-                transition: 0.25s ease-in-out;
+                box-shadow: 12px 12px 10px #a0a0a0, 
+                            -12px -12px 10px #fefefe;
             }
         }
     }
@@ -323,7 +324,7 @@ body{
         background-color: #02adad;
     }
 }
-@media all and (prefers-color-scheme: dark){
+/*@media all and (prefers-color-scheme: dark){
     .navbar{
         .navbar-brand{
             padding:0;
@@ -348,4 +349,4 @@ body{
     .member-role{
         color:grey;
     }
-}
+}*/

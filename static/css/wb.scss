@@ -97,6 +97,10 @@ body{
                     border-radius: 50rem;
                     padding:5px 10px;
                     margin:10px;
+                    transition: transform 0.4s ease-in-out;
+                }
+                .sec-4-btn:hover{
+                    transform:translateX(10px);
                 }
             }
         }
@@ -111,7 +115,7 @@ body{
             padding-right: 0px;
             padding-left: 0px;
             #text,#lnum{
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: bold;
             }
             .sec-2{
@@ -130,7 +134,7 @@ body{
             padding-right: 0px;
             padding-left: 0px;
             #lnum,#text{
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: bold;
             }
         }
@@ -178,7 +182,7 @@ body{
             #text,#lnum{
                 padding-left: 0px;
                 padding-right: 0px;
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: bold;
             }
             .sec-2{
@@ -195,10 +199,8 @@ body{
                     #list-sub-item{
                         font-size: 14px;
                     }
-                }
-                
-            }
-            
+                }              
+            }          
         }
     }
 }

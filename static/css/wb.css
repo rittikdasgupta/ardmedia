@@ -117,6 +117,15 @@ body {
   border-radius: 50rem;
   padding: 5px 10px;
   margin: 10px;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+#content-wrapper #section4 #sec-4-left #sub-section2 .sec-4-btn:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 /*---------Media Queries---------*/
@@ -126,7 +135,7 @@ body {
     padding-left: 0px;
   }
   #content-wrapper #section1 #text, #content-wrapper #section1 #lnum {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
   }
   #content-wrapper #section1 .sec-2 {
@@ -145,7 +154,7 @@ body {
     padding-left: 0px;
   }
   #content-wrapper #section2 #lnum, #content-wrapper #section2 #text {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
   }
   #content-wrapper #section3 {
@@ -188,7 +197,7 @@ body {
   #content-wrapper #section5 #text, #content-wrapper #section5 #lnum {
     padding-left: 0px;
     padding-right: 0px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
   }
   #content-wrapper #section5 .sec-2 {

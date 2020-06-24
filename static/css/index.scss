@@ -57,20 +57,23 @@ $footerBgColor:#0b2d35;
             justify-content: space-between;
             .form-group{
                 i{
-                    position: relative;
-                    left:15px;
-                    top:35px;
+                    position: absolute;
+                    padding-left:20px;
+                    padding-top:2.3vh;
                 }
             }
             .form-control{
                 width:28vw;
                 height:7vh;
+                font-size: 18px;
+                padding-left:50px;
                 border-radius: 50rem;
                 box-shadow: inset 3px 1px 5px rgb(145, 145, 145), inset -2px -5px 10px #d7fcfa;
                 background-color: $heroFormColor;
             }
             ::placeholder{
                 color:#616161;
+                font-size: 18px;
             }
         }
     }
@@ -141,7 +144,7 @@ $footerBgColor:#0b2d35;
             border-radius: 20px;
             box-shadow: 8px 8px 10px #afafaf, -8px -8px 10px #fffffff2;
             text-align: center;
-            transition: box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out;           
             #card-text{
                 color:black;
                 font-family: bahnschrift;
@@ -237,6 +240,10 @@ $footerBgColor:#0b2d35;
             box-shadow: 2px 2px 6px #9e9e9e, -2px -2px 2px #ffffff;
             border-radius: 50rem;
             padding:5px 15px 5px 15px;
+            transition: transform 0.48s ease-in-out;
+        }
+        .btn:hover{
+            transform: rotateZ(360deg);
         }
     }
 }
@@ -331,11 +338,11 @@ $footerBgColor:#0b2d35;
             font-size: 15px;
             background-color: $knowMoreBtn1;
             color:#6b8c89;
-            transition:box-shadow 0.2s ease-in-out;
+            transition:transform 0.48s ease-in-out;
         }
         .know-more:hover{
             color:$knowMoreBtn1HoverColor;
-            box-shadow: 6px 5px 6px #0000008f, -4px -3px 6px #f7ffffde;
+            transform: rotateZ(360deg);
             
         }
      }
@@ -372,11 +379,11 @@ $footerBgColor:#0b2d35;
             font-size: 15px;
             background-color: $knowMoreBtn2;
             color:#bfdbda;
-            transition:box-shadow 0.2s ease-in-out;
+            transition:transform 0.48s ease-in-out;
         }
         .know-more:hover{
             color:$knowMoreBtn2HoverColor;
-            box-shadow: 4px 4px 8px #0000008f, -2px -3px 5px #bbe5e5a3;
+            transform: rotateZ(360deg);
         }
     }
 }
@@ -401,12 +408,11 @@ $footerBgColor:#0b2d35;
            font-size: 15px;
            background-color: $KnowMoreBtn3;
            color:#48929a;
-           transition:box-shadow 0.2s ease-in-out;
+           transition:transform 0.48s ease-in-out;
        }
        .know-more:hover{
            color:$KnowMoreBtn3HoverColor;
-           box-shadow: 4px 4px 8px #000000, -2px -3px 5px #346e66;
-           
+           transform: rotateZ(360deg);
        }
    }
 }
@@ -428,12 +434,11 @@ $footerBgColor:#0b2d35;
            font-size: 15px;
            background-color: $KnowMoreBtn4;
            color:#249490;
-           transition:box-shadow 0.2s ease-in-out;
+           transition:transform 0.48s ease-in-out;
        }
        .know-more:hover{
            color:$KnowMoreBtn4HoverColor;
-           box-shadow: 6px 6px 8px black, -2px -3px 5px #346e66;
-           
+           transform: rotateZ(360deg);     
        }
    }
    #illustration-3{
@@ -561,38 +566,44 @@ $footerBgColor:#0b2d35;
         display: block;
         .service-tab-grid{
             margin:10px auto;
-            .service-card-content-xs{
-                margin:auto;
-                border-radius:5px;
-                box-shadow: 0px 0px 18px 2px rgb(189, 189, 189);
-                padding:20px;
-                .service-symbol{
-                    padding:10px;
-                    text-align: center;
-                    i{
-                        background-color: $navbarColor;
-                        padding:10px 13px;
-                        border-radius: 50rem;
-                        color:white;
-                        font-size:12px;
-                    }
-                    #code-sym2{
-                        padding:10px 9px;
-                    }
-                    #code-sym3{
-                        padding:10px 11px;
-                    }
-                    #code-sym4{
-                        padding:10px 12px;
-                    }
-                }
-                .service-tab-content{
-                    font-family:bahnschrift;
-                    font-size:12px;
-                    padding:0px;
-                    text-align: center;
+            .service-link{
+                text-decoration: none;
+                .service-card-content-xs{
                     margin:auto;
+                    border-radius:5px;
+                    box-shadow: 0px 0px 18px 2px rgb(189, 189, 189);
+                    padding:20px;
+                    .service-symbol{
+                        padding:10px;
+                        text-align: center;
+                        i{
+                            background-color: $navbarColor;
+                            padding:10px 13px;
+                            border-radius: 50rem;
+                            color:white;
+                            font-size:12px;
+                        }
+                        #code-sym2{
+                            padding:10px 9px;
+                        }
+                        #code-sym3{
+                            padding:10px 11px;
+                        }
+                        #code-sym4{
+                            padding:10px 12px;
+                        }
+                    }
+                    .service-tab-content{
+                        font-family:bahnschrift;
+                        font-size:12px;
+                        padding:0px;
+                        text-align: center;
+                        margin:auto;
+                    }
                 }
+            }
+            .service-link:link,.service-link:active, .service-link:visited{
+                color:black;
             }
         }
         #tab3, #tab4{
@@ -636,11 +647,6 @@ $footerBgColor:#0b2d35;
     }
     //---------------------------END SERVICE TABS MOBILE-----------------------
 
-
-    //-------------------------------BUSINESS SECTION--------------------------
-    #business-section{
-        transform: translateY(-4vh);
-    }
 
     //------------------------------UNMATCHED SERVICES---------------------------
     #crow1{
@@ -798,9 +804,7 @@ $footerBgColor:#0b2d35;
         */
     }
     //---------------------------------END WHY CHOOSE US-----------------------------
-    #crow7{
-        position:relative;
-        bottom:0;
+    #crow7{ 
         .footer-right-wrapper{
             .footer-right{
                 padding-top:40px;

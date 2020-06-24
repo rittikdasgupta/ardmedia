@@ -29,9 +29,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px 15px;
 }
 
@@ -231,7 +231,7 @@ body {
 
 @media all and (max-width: 768px) {
   .navbar {
-    min-height: 15vh;
+    min-height: 10vh;
     border: 1px solid #1c1c1c;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -353,7 +353,7 @@ body {
   }
 }
 
-@media all and (prefers-color-scheme: light) {
+@media all and (prefers-color-scheme: light), (prefers-color-scheme: dark) {
   body {
     background-color: #ebebeb;
   }
@@ -397,11 +397,14 @@ body {
     -webkit-box-shadow: 10px 10px 10px #cccccc,  -10px -10px 10px #fefefe;
             box-shadow: 10px 10px 10px #cccccc,  -10px -10px 10px #fefefe;
     border-bottom: 2px solid #02adad;
+    -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
   }
   .cards-wrapper .cards-content .cards:hover {
-    border-bottom: 2px solid orangered;
-    -webkit-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
+    -webkit-box-shadow: 12px 12px 10px #a0a0a0,  -12px -12px 10px #fefefe;
+            box-shadow: 12px 12px 10px #a0a0a0,  -12px -12px 10px #fefefe;
   }
   .member-role {
     color: #4b4b4b;
@@ -414,25 +417,30 @@ body {
   }
 }
 
-@media all and (prefers-color-scheme: dark) {
-  .navbar .navbar-brand {
-    padding: 0;
-  }
-  .navbar .navbar-brand img {
-    display: none;
-    padding: 0;
-  }
-  .navbar .navbar-brand-mobile img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-  }
-  .slider-header .glyphicon {
-    color: white;
-  }
-  .member-role {
-    color: grey;
-  }
-}
+/*@media all and (prefers-color-scheme: dark){
+    .navbar{
+        .navbar-brand{
+            padding:0;
+            img{
+                display: none;
+                padding:0;
+            }
+        }
+        .navbar-brand-mobile{
+            img{
+                display: flex;
+                padding:0;
+            }
+        }
+    }
+    .slider-header{
+        .glyphicon{
+            color:white;
+
+        }
+    }
+    .member-role{
+        color:grey;
+    }
+}*/
 /*# sourceMappingURL=team.css.map */

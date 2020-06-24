@@ -16,12 +16,12 @@
                 <div class="row form-wrapper">
                     <form class="main-form">
                         <div class="form-group">
-                            <i class="fas fa-user"></i>
-                            <input type="text" placeholder="        FirstName" class="form-control">
+                            <i class="fas fa-user fa-lg"></i>
+                            <input type="text" placeholder="FirstName" class="form-control">
                         </div>
                         <div class="form-group">
                             <i class="far fa-envelope fa-lg"></i>
-                            <input type="email" placeholder="          Email" class="form-control">
+                            <input type="email" placeholder="Email" class="form-control">
                         </div>
                     </form>
                 </div>
@@ -45,7 +45,7 @@
     </div>
     <div class="container card-container">
         <div class="col-xs-2 card-content" id="card1">
-            <a href="/socialmedia">
+            <a href="/socialmedia" target="_self">
                 <div class="col-xs-12 row-wrapper-header">
                     <span id="card-icon"><i class="fas fa-dollar-sign fa-2x icon-1" id="card-header-icon"></i></span>
                 </div>
@@ -60,7 +60,7 @@
             </a>
         </div>
         <div class="col-xs-2 card-content" id="card2">
-            <a href="/wd">
+            <a href="/wd" target="_self">
                 <div class="col-xs-12 row-wrapper-header">
                     <span id="card-icon"><i class="fas fa-code fa-2x icon-2" id="card-header-icon"></i></span>
                 </div>
@@ -75,7 +75,7 @@
             </a>
         </div>
         <div class="col-xs-2 card-content" id="card3">
-            <a href="/graphics">
+            <a href="/graphics" target="_self">
                 <div class="col-xs-12 row-wrapper-header">
                     <span id="card-icon"><i class="fas fa-pen-nib fa-2x icon-3" id="card-header-icon"></i></span>
                 </div>
@@ -90,17 +90,19 @@
             </a>
         </div>
         <div class="col-xs-2 card-content" id="card4">
-            <div class="col-xs-12 row-wrapper-header">
-                <span id="card-icon"><i class="fas fa-chess-knight fa-2x icon-4" id="card-header-icon"></i></span>
-            </div>
-            <div class="col-xs-12">
-                <span id="card-text">
-                    STRATEGY
-                </span>
-            </div>
-            <div class="col-xs-12 i4" id="row-wrapper-footer">
-                <span id="right-arrow"><i class="fas fa-angle-right fa-2x"></i></span>
-            </div>
+            <a href="#" target="_self">
+                <div class="col-xs-12 row-wrapper-header">
+                    <span id="card-icon"><i class="fas fa-chess-knight fa-2x icon-4" id="card-header-icon"></i></span>
+                </div>
+                <div class="col-xs-12">
+                    <span id="card-text">
+                        STRATEGY
+                    </span>
+                </div>
+                <div class="col-xs-12 i4" id="row-wrapper-footer">
+                    <span id="right-arrow"><i class="fas fa-angle-right fa-2x"></i></span>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -109,44 +111,52 @@
 <!--SERVICE TABS MOBILE-->
 <div class="row card-wrapper-xs" id="service-cards-xs">
     <div class="col-xs-6 col-sm-4 service-tab-grid">
-        <div class="col-xs-12 service-card-content-xs" id="tab1">
-            <div class="service-symbol">
-                <i class="fas fa-dollar-sign"></i>
+        <a href="/socialmedia" target='_self' class="service-link">
+            <div class="col-xs-12 service-card-content-xs" id="tab1">
+                <div class="service-symbol">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="service-tab-content">
+                    Social Media Marketing
+                </div>
             </div>
-            <div class="service-tab-content">
-                Social Media Marketing
-            </div>
-        </div>
+        </a>
     </div>
     <div class="col-xs-6 col-sm-4 service-tab-grid">
-        <div class="col-xs-12 service-card-content-xs" id="tab2">
-            <div class="service-symbol">
-                <i class="fas fa-code" id="code-sym2"></i>
+        <a href="/wd" target="_self" class="service-link">
+            <div class="col-xs-12 service-card-content-xs" id="tab2">
+                <div class="service-symbol">
+                    <i class="fas fa-code" id="code-sym2"></i>
+                </div>
+                <div class="service-tab-content">
+                    Web Design & Development
+                </div>
             </div>
-            <div class="service-tab-content">
-                Web Design & Development
-            </div>
-        </div>
+        </a>
     </div>
     <div class="col-xs-6 col-sm-4 service-tab-grid">
-        <div class="col-xs-12 service-card-content-xs" id="tab3">
-            <div class="service-symbol">
-                <i class="fas fa-pen-nib" id="code-sym3"></i>
+        <a href="/graphics" target="_self" class="service-link">
+            <div class="col-xs-12 service-card-content-xs" id="tab3">
+                <div class="service-symbol">
+                    <i class="fas fa-pen-nib" id="code-sym3"></i>
+                </div>
+                <div class="service-tab-content">
+                    Graphic Design
+                </div>
             </div>
-            <div class="service-tab-content">
-                Graphic Design
-            </div>
-        </div>
+        </a>
     </div>
     <div class="col-xs-6 col-sm-4 service-tab-grid">
-        <div class="col-xs-12 service-card-content-xs" id="tab4">
-            <div class="service-symbol">
-                <i class="fas fa-chess-knight" id="code-sym4"></i>
+        <a href="#" target="_self" class="service-link">
+            <div class="col-xs-12 service-card-content-xs" id="tab4">
+                <div class="service-symbol">
+                    <i class="fas fa-chess-knight" id="code-sym4"></i>
+                </div>
+                <div class="service-tab-content">
+                    Strategy
+                </div>
             </div>
-            <div class="service-tab-content">
-                Strategy
-            </div>
-        </div>
+        </a>
     </div>
 </div>
 <div class="row" id="register-section">
@@ -293,7 +303,7 @@
             </div>
             <div class="row button-section2">
                 <div class="container">
-                    <a href="/graphics" target="_blank">
+                    <a href="/graphics" target="_self">
                         <button class="btn know-more" id="gr-ds3">Know More <span class="glyphicon glyphicon-chevron-right" style="color: #48929a;padding:2px;position: relative;top:2px;"></button>
                     </a>
                 </div>
@@ -331,7 +341,7 @@
             </div>
             <div class="row button-section2">
                 <div class="container">
-                    <a href="/wd" target="_self">
+                    <a href="#" target="_self">
                         <button class="btn know-more" id="web-dev3">Know More <span class="glyphicon glyphicon-chevron-right" style="color: #296866;padding:2px;position: relative;top:2px;"></button>
                     </a>
                 </div>

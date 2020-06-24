@@ -10,7 +10,7 @@ const slider = () => {
 const sliderOut = () =>{
     const arrow=document.querySelector('.arrow');
     const navSlide=document.querySelector('.slider-main');
-    arrow.addEventListener('click', () => {
+    arrow.addEventListener('touchend', () => {
         navSlide.classList.toggle('active');
         scrollActive();
     });
@@ -22,7 +22,7 @@ function scrollActive(){
     document.querySelector('html').style.position='static';
 }
 function sliderOutOnBodyTouch(){
-    const doc=document.querySelector('body');
+    const doc=document.querySelector('#Opac-slider');
     const navSlide=document.querySelector('.slider-main');
     doc.addEventListener('touchend', () => {
         if(navSlide.classList.contains('active')){

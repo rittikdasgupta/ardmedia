@@ -262,14 +262,16 @@
     <script>
         //MOBILE VIEW NAV SLIDE IN
         const ham=document.querySelector('.hamburger');
+        console.log(ham);
         const navSlide=document.querySelector('.slider-main');
         const Opac=document.querySelector('#Opac-slider');
         const arr=document.querySelector('.arrow');
-        ham.addEventListener('touchend',() => {slider();});
+        ham.addEventListener('touchend',() => {slider()});
         Opac.addEventListener('touchend',() => {sliderOutOnBodyTouch()});
         arr.addEventListener('touchend',() => {sliderOut()});
         function slider(){
             navSlide.classList.toggle('active');
+            console.log('engaged');
             scrollDisable();
         }
         function sliderOut(){

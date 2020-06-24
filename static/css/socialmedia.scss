@@ -75,6 +75,10 @@ body{
                     color:white;
                     border-radius: 50rem;
                     font-size: 22px;
+                    transition: transform 0.38s ease-in-out;
+                }
+                .sec-4-btn:hover{
+                    transform:translateY(-10px);
                 }
             }
         }
@@ -82,7 +86,7 @@ body{
     #section5{
         .sec-5{
             #text{
-                font-size:36px;
+                font-size:30px;
                 font-weight: normal;
             }
         }
@@ -115,6 +119,10 @@ body{
                     border-radius: 50rem;
                     margin:10px;
                     font-size: 22px;
+                    transition: transform 0.4s ease-in-out;
+                }
+                .sec-6-btn:hover{
+                    transform:translateX(10px);
                 }
             }
         }
@@ -154,7 +162,7 @@ body{
                 #sec-2-left-text{
                     font-size: 17px;
                     text-align: center;
-                    padding:20px;
+                    padding:20px 0px;
                 }
             }
         }
@@ -171,12 +179,16 @@ body{
         #section4{
             padding-top: 5px;
             .sec-4{
+                padding:10px;
                 #sec-4-text{
                     font-size: 17px;
                     text-align: center;
-                    padding:15px;
+                    padding:15px 0px;
+                    margin:0;
+                    width:100%;
                 }
                 .button{
+                    text-align: center;
                     .sec-4-btn{
                         font-size: 13px;
                         text-align: center;
@@ -188,7 +200,7 @@ body{
             padding-top:50px;
             .sec-5{
                 #text{
-                    font-size:30px;
+                    font-size:35px;
                     font-weight: bold;
                     text-align: center;
                 }
@@ -197,9 +209,11 @@ body{
         #section6{
             .sec-6-content{
                 #sec-6-left{
+                    padding:0px;
                     #sec-6-left-heading{
                         font-size:22px;
                         font-weight: 600;
+                        text-align: center;
                     }
                     #sec-6-left-text{
                         font-size: 18px;
@@ -211,6 +225,7 @@ body{
                     display: none;
                 }
                 .button{
+                    display: none;
                     .sec-6-btn{
                         font-size: 13px;
                         text-align: center;
