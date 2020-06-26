@@ -140,6 +140,10 @@
           transform: translateY(-10px);
 }
 
+.hero-banner-mobile-wrapper {
+  display: none;
+}
+
 .card-wrapper {
   width: 100%;
   margin: 0;
@@ -423,16 +427,16 @@
   font-size: 15px;
   background-color: #dcf9f8;
   color: #6b8c89;
-  -webkit-transition: -webkit-transform 0.48s ease-in-out;
-  transition: -webkit-transform 0.48s ease-in-out;
-  transition: transform 0.48s ease-in-out;
-  transition: transform 0.48s ease-in-out, -webkit-transform 0.48s ease-in-out;
+  -webkit-transition: -webkit-transform 0.38s ease-in-out;
+  transition: -webkit-transform 0.38s ease-in-out;
+  transition: transform 0.38s ease-in-out;
+  transition: transform 0.38s ease-in-out, -webkit-transform 0.38s ease-in-out;
 }
 
 #ssmedia .button-section2 .know-more:hover {
   color: #4e6967;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 #ssmedia #illustration-2 {
@@ -477,16 +481,16 @@
   font-size: 15px;
   background-color: #6f979e;
   color: #bfdbda;
-  -webkit-transition: -webkit-transform 0.48s ease-in-out;
-  transition: -webkit-transform 0.48s ease-in-out;
-  transition: transform 0.48s ease-in-out;
-  transition: transform 0.48s ease-in-out, -webkit-transform 0.48s ease-in-out;
+  -webkit-transition: -webkit-transform 0.38s ease-in-out;
+  transition: -webkit-transform 0.38s ease-in-out;
+  transition: transform 0.38s ease-in-out;
+  transition: transform 0.38s ease-in-out, -webkit-transform 0.38s ease-in-out;
 }
 
 #wddesign .button-section2 .know-more:hover {
   color: #c2f5f3;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 #graphic {
@@ -517,16 +521,16 @@
   font-size: 15px;
   background-color: #264247;
   color: #48929a;
-  -webkit-transition: -webkit-transform 0.48s ease-in-out;
-  transition: -webkit-transform 0.48s ease-in-out;
-  transition: transform 0.48s ease-in-out;
-  transition: transform 0.48s ease-in-out, -webkit-transform 0.48s ease-in-out;
+  -webkit-transition: -webkit-transform 0.38s ease-in-out;
+  transition: -webkit-transform 0.38s ease-in-out;
+  transition: transform 0.38s ease-in-out;
+  transition: transform 0.38s ease-in-out, -webkit-transform 0.38s ease-in-out;
 }
 
 #graphic .button-section2 .know-more:hover {
   color: #2abccc;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 #strategy {
@@ -553,16 +557,16 @@
   font-size: 15px;
   background-color: #062223;
   color: #249490;
-  -webkit-transition: -webkit-transform 0.48s ease-in-out;
-  transition: -webkit-transform 0.48s ease-in-out;
-  transition: transform 0.48s ease-in-out;
-  transition: transform 0.48s ease-in-out, -webkit-transform 0.48s ease-in-out;
+  -webkit-transition: -webkit-transform 0.38s ease-in-out;
+  transition: -webkit-transform 0.38s ease-in-out;
+  transition: transform 0.38s ease-in-out;
+  transition: transform 0.38s ease-in-out, -webkit-transform 0.38s ease-in-out;
 }
 
 #strategy .button-section2 .know-more:hover {
   color: #2abccc;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 #strategy #illustration-3 {
@@ -690,6 +694,71 @@
 @media screen and (max-width: 768px) {
   .overlay1 {
     display: none;
+  }
+  .hero-banner-mobile-wrapper {
+    width: 98%;
+    margin: auto;
+    padding: 40px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content {
+    padding: 20px 10px;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .hero-banner-heading-wrapper {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .hero-banner-heading-wrapper #hero-banner-heading {
+    color: #323232;
+    font-size: 9vw;
+    font-weight: 800;
+    text-shadow: 3px 0px 2px #afafaf;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form {
+    width: 90%;
+    margin: auto;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form .form-group .form-control {
+    border-radius: 50rem;
+    height: 6vh;
+    color: black;
+    font-size: 18px;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form .form-group input {
+    padding-left: 50px;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form .form-group i {
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 2vh;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form .form-group ::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form .form-group :-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form .form-group ::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form .form-group ::placeholder {
+    font-size: 18px;
+  }
+  .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form .form-group .btn {
+    margin-top: 3vh;
+    border-radius: 50rem;
+    background-color: teal;
+    color: white;
+    font-size: 18px;
+    height: 6vh;
+    text-align: center;
   }
   .card-wrapper, .flexbox, .hero-text-wrapper {
     display: none;

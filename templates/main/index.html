@@ -5,7 +5,7 @@
 <script src="../../static/js/animation.js" defer></script>
 {% endblock %}
 {% block content %}
-<!--HERO BANNER-->
+<!--HERO BANNER PC-->
 <section style="width: 100%;">
     <section id="content-wrapper">
         <div class="overlay1">
@@ -14,7 +14,7 @@
                     <span id="hero-text">Grow your online business faster!</span>
                 </div>
                 <div class="row form-wrapper">
-                    <form class="main-form">
+                    <form class="main-form pageclip-form" action="https://send.pageclip.co/0xMsXCmNr4Fz58UnApxMjwZJZAAUvfGK"  method="post">
                         <div class="form-group">
                             <i class="fas fa-user fa-lg"></i>
                             <input type="text" placeholder="FirstName" class="form-control">
@@ -27,9 +27,9 @@
                 </div>
                 <div class="row container">
                     <div class="hero-text-2-container">
-                        <a href="/contact" target="_self">
+                        <button type="submit" style="background-color: transparent;border:none" class="pageclip-form__submit">
                             <span class="hero-text-2">Claim your free 30-minute strategy session</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -37,6 +37,35 @@
     </section>
 </section>
 <!--END HERO BANNER-->
+
+
+<!--HERO BANNER MOBILE-->
+<section class="row hero-banner-mobile-wrapper">
+    <div class="hero-banner-mobile-content col-xs-12">
+        <div class="hero-banner-heading-wrapper">
+            <div id="hero-banner-heading">GROW YOUR</div>
+            <div id="hero-banner-heading">ONLINE BUSINESS</div>
+            <div id="hero-banner-heading">FASTER</div>
+        </div>
+        <form class="header-banner-mobile-form">
+            <div class="form-group">
+                <i class="fas fa-user fa-lg"></i>
+                <input class="form-control" type="text" placeholder="Firstname">
+            </div>
+            <div class="form-group">
+                <i class="far fa-envelope fa-lg"></i>
+                <input class="form-control" type="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-info form-control">
+                    CLAIM YOUR STRATEGY SESSION
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+<!--END HERO BANNER MOBILE-->
+
 
 <!--SERVICE CARDS FOR PC VIEW-->
 <div class="row card-wrapper" id="service-cards-lg">

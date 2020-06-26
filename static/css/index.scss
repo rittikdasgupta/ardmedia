@@ -114,6 +114,9 @@ $footerBgColor:#0b2d35;
         }
     }
 }
+.hero-banner-mobile-wrapper{
+    display: none;
+}
 
 //SERVICE CARDS
 .card-wrapper{
@@ -338,11 +341,11 @@ $footerBgColor:#0b2d35;
             font-size: 15px;
             background-color: $knowMoreBtn1;
             color:#6b8c89;
-            transition:transform 0.48s ease-in-out;
+            transition:transform 0.38s ease-in-out;
         }
         .know-more:hover{
             color:$knowMoreBtn1HoverColor;
-            transform: rotateZ(360deg);
+            transform: translateX(10px);
             
         }
      }
@@ -379,11 +382,11 @@ $footerBgColor:#0b2d35;
             font-size: 15px;
             background-color: $knowMoreBtn2;
             color:#bfdbda;
-            transition:transform 0.48s ease-in-out;
+            transition:transform 0.38s ease-in-out;
         }
         .know-more:hover{
             color:$knowMoreBtn2HoverColor;
-            transform: rotateZ(360deg);
+            transform: translateX(10px);
         }
     }
 }
@@ -408,11 +411,11 @@ $footerBgColor:#0b2d35;
            font-size: 15px;
            background-color: $KnowMoreBtn3;
            color:#48929a;
-           transition:transform 0.48s ease-in-out;
+           transition:transform 0.38s ease-in-out;
        }
        .know-more:hover{
            color:$KnowMoreBtn3HoverColor;
-           transform: rotateZ(360deg);
+           transform: translateX(10px);
        }
    }
 }
@@ -434,11 +437,11 @@ $footerBgColor:#0b2d35;
            font-size: 15px;
            background-color: $KnowMoreBtn4;
            color:#249490;
-           transition:transform 0.48s ease-in-out;
+           transition:transform 0.38s ease-in-out;
        }
        .know-more:hover{
            color:$KnowMoreBtn4HoverColor;
-           transform: rotateZ(360deg);     
+           transform: translateX(10px);    
        }
    }
    #illustration-3{
@@ -554,6 +557,62 @@ $footerBgColor:#0b2d35;
     .overlay1{
         display:none;
     }
+    //HERO BANNER MOBILE
+    .hero-banner-mobile-wrapper{
+        width:98%;
+        margin:auto;
+        padding:40px 0px;
+        display: flex;
+        justify-content: flex-end;
+        .hero-banner-mobile-content{
+            padding:20px 10px;
+            .hero-banner-heading-wrapper{
+                width:90%;
+                margin:auto;
+                text-align: center;
+                margin-bottom: 50px;
+                #hero-banner-heading{
+                    color:#323232;
+                    font-size: 9vw;
+                    font-weight: 800;
+                    text-shadow: 3px 0px 2px #afafaf;
+                }
+            }
+            .header-banner-mobile-form{
+                width:90%;
+                margin:auto;
+                .form-group{
+                    .form-control{
+                        border-radius: 50rem;
+                        height:6vh;
+                        color:black;
+                        font-size: 18px;
+                    }
+                    input{
+                        padding-left:50px;
+                    }
+                    i{
+                        position: absolute;
+                        padding-left:20px;
+                        padding-top:2vh;
+                    }
+                    ::placeholder{
+                        font-size: 18px;
+                    }
+                    .btn{
+                        margin-top: 3vh;
+                        border-radius: 50rem;
+                        background-color: teal;
+                        color:white;
+                        font-size: 18px;
+                        height:6vh;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+//HERO BANNER MOBILE END
     //----------------------SERVICE TABS MOBILE--------------------------
     .card-wrapper,.flexbox,.hero-text-wrapper{
         display: none;

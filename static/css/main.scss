@@ -21,7 +21,7 @@ body{
     background-color: #f2f9f9;
     border:0;
     margin-bottom: 0;  
-    padding-top:10px;
+    padding:10px 0px;
     .navcont{
         width:98%;
         margin: auto;
@@ -264,13 +264,11 @@ body{
     //MAIN NAVBAR
     .navbar{
         border:1px solid teal;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius:20px;
         background-color: #02323de5;
         .navcont{
             width:100%;
             border-bottom: none;
-            padding:20px;
+            padding:10px 20px;
             .navbar-header{
                 display:flex;
                 align-items: flex-end;
