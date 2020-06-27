@@ -20,5 +20,8 @@ def smedia():
 @app.route("/team")
 def team():
     return render_template("main/team.html")
+@app.route("/policy")
+def policy():
+    return render_template("main/privacyPolicy.html")
 if __name__=="__main__":
     app.run()
