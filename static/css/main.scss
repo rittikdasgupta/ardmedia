@@ -17,11 +17,11 @@ body{
     overflow-x: hidden;
 }
 .navbar{
-    min-height:10vh;
+    min-height:8vh;
     background-color: #f2f9f9;
     border:0;
     margin-bottom: 0;  
-    padding:10px 0px;
+    padding:10px 0px 5px 0px;
     .navcont{
         width:98%;
         margin: auto;
@@ -316,6 +316,7 @@ body{
         background-color: #60efdb; 
         border-radius: 24px; 
         border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
         height: 100vh;
     }
     .slider-header{

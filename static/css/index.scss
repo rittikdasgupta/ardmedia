@@ -49,18 +49,40 @@ $footerBgColor:#0b2d35;
     justify-content: center;
     align-items: space-between;
     .form-wrapper{
-        width:58%;
+        width:55%;
         margin:auto;
         flex:1;
         .main-form{
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: space-between;
+            justify-content: flex-start;
             .form-group{
                 i{
                     position: absolute;
                     padding-left:20px;
                     padding-top:2.3vh;
                 }
+                .btn{
+                    width:80%;
+                    margin: auto;
+                    background-color: $heroTextTwoColor;
+                    padding:5px 10px;
+                    border-radius: 50rem;
+                    box-shadow: 8px 2px 5px #8a8a8a,-2px -2px 5px #d7fcfa;
+                    font-size: 25px;
+                    font-weight:lighter;
+                    color: #4b4b4b;
+                    transition: transform 0.42s ease-in-out;
+                }
+                .btn:hover{
+                    transform: translateY(-10px);
+                }
+            }
+            #hero-btn{
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
             }
             .form-control{
                 width:28vw;
@@ -68,7 +90,7 @@ $footerBgColor:#0b2d35;
                 font-size: 18px;
                 padding-left:50px;
                 border-radius: 50rem;
-                box-shadow: inset 3px 1px 5px rgb(145, 145, 145), inset -2px -5px 10px #d7fcfa;
+                box-shadow: inset 3px 1px 5px #919191, inset -2px -5px 10px #d7fcfa;
                 background-color: $heroFormColor;
             }
             ::placeholder{
@@ -89,30 +111,7 @@ $footerBgColor:#0b2d35;
             color:$heroTextColor;
         }
     }
-    .container{
-        width:80%;
-        text-align: center;
-        padding:0px;
-        margin:auto;
-        .hero-text-2-container{
-            width:60%;
-            margin:auto;
-            background-color: $heroTextTwoColor;
-            border-radius: 50rem;
-            padding:10px 20px;
-            box-shadow: 6px 3px 5px #4e4e4e, -6px -3px 6px #c0fbebab;
-            transition:transform 0.48s ease-in-out;
-            .hero-text-2{
-                font-family: bahnschrift;
-                font-weight: lighter;
-                font-size: 2vw;
-                color:#363636;
-            }
-        }
-        .hero-text-2-container:hover{
-            transform:translateY(-10px);
-        }
-    }
+    
 }
 .hero-banner-mobile-wrapper{
     display: none;
@@ -570,7 +569,7 @@ $footerBgColor:#0b2d35;
                 width:90%;
                 margin:auto;
                 text-align: center;
-                margin-bottom: 50px;
+                margin-bottom: 60px;
                 #hero-banner-heading{
                     color:#323232;
                     font-size: 9vw;
@@ -581,10 +580,12 @@ $footerBgColor:#0b2d35;
             .header-banner-mobile-form{
                 width:90%;
                 margin:auto;
+                margin-top:20px;
                 .form-group{
+                    margin:25px auto;
                     .form-control{
                         border-radius: 50rem;
-                        height:6vh;
+                        height:20%;
                         color:black;
                         font-size: 18px;
                     }
@@ -594,18 +595,18 @@ $footerBgColor:#0b2d35;
                     i{
                         position: absolute;
                         padding-left:20px;
-                        padding-top:2vh;
+                        padding-top:10px;
                     }
                     ::placeholder{
                         font-size: 18px;
                     }
                     .btn{
-                        margin-top: 3vh;
+                        margin-top: 6vh;
                         border-radius: 50rem;
                         background-color: teal;
                         color:white;
                         font-size: 18px;
-                        height:6vh;
+                        height:36px;
                         text-align: center;
                     }
                 }
@@ -879,5 +880,9 @@ $footerBgColor:#0b2d35;
         }
     }
 }
-
+@media screen and (max-width:340px){
+    .hero-banner-mobile-wrapper .hero-banner-mobile-content .header-banner-mobile-form .form-group .btn{
+        font-size: 15px;
+    }
+}
 //-----------------------------END STYLES--------------------------------------------
